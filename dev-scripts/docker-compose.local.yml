@@ -22,6 +22,9 @@ services:
       - ../plugins/MapasBlame:/var/www/html/protected/application/plugins/MapasBlame
       - ../plugins/AbstractValidator:/var/www/html/protected/application/plugins/AbstractValidator
 
+      - ../compose/overrides/plugins/AldirBlancDataprev/Plugin.php:/var/www/html/protected/application/plugins/AldirBlancDataprev/Plugin.php
+      - ../compose/overrides/plugins/AldirBlancDataprev/config-csv-inciso1.php:/var/www/html/protected/application/plugins/AldirBlancDataprev/config-csv-inciso1.php
+
     environment:
       - PENDING_PCACHE_RECREATION_INTERVAL=10
       - APP_MODE=development
