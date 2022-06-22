@@ -9,4 +9,4 @@
 	url = https://github.com/mapasculturais/plugin-AbstractValidator.git
 [submodule "plugins/Accessibility"]
 	path = plugins/Accessibility
-	url = git@github.com:tiagodfdev/accessibility-mapas.git
+	url = https://github.com/tiagodfdev/accessibility-mapas.git
