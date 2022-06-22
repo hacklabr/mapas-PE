@@ -10,3 +10,6 @@
 [submodule "plugins/Accessibility"]
 	path = plugins/Accessibility
 	url = https://github.com/tiagodfdev/accessibility-mapas.git
+[submodule "plugins/AldirBlanc"]
+	path = plugins/AldirBlanc
+	url = https://github.com/mapasculturais/plugin-AldirBlanc.git
