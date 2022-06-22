@@ -1,5 +1,5 @@
-# Mapas Culturais Base Project
-Este é um projeto base para desenvolvimento de temas e plugins.
+# Mapa Cultural de Pernambuco
+Esse é o repositório do Mapa Cultural de Pernambuco
 
 ## Estrutura de arquivos
 - **compose**
