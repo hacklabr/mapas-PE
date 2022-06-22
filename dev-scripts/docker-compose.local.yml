@@ -20,6 +20,7 @@ services:
       - ../plugins/SamplePlugin:/var/www/html/protected/application/plugins/SamplePlugin
       - ../plugins/MultipleLocalAuth:/var/www/html/protected/application/plugins/MultipleLocalAuth
       - ../plugins/MapasBlame:/var/www/html/protected/application/plugins/MapasBlame
+      - ../plugins/AbstractValidator:/var/www/html/protected/application/plugins/AbstractValidator
 
     environment:
       - PENDING_PCACHE_RECREATION_INTERVAL=10
