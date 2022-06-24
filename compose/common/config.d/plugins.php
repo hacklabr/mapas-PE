@@ -5,15 +5,15 @@ return [
         'EvaluationMethodTechnical' => ['namespace' => 'EvaluationMethodTechnical'],
         'EvaluationMethodSimple' => ['namespace' => 'EvaluationMethodSimple'],
         'EvaluationMethodDocumentary' => ['namespace' => 'EvaluationMethodDocumentary'],
-        
-        'MultipleLocalAuth' => [ 'namespace' => 'MultipleLocalAuth' ],
+
+        'MultipleLocalAuth' => ['namespace' => 'MultipleLocalAuth'],
         'SamplePlugin' => ['namespace' => 'SamplePlugin'],
         'MapasBlame' => ['namespace' => 'MapasBlame'],
         'AbstractValidator' => [
-          'namespace' => 'AbstractValidator',
-          'config' => [
-               'is_opportunity_managed_handler' => function ($opportunity) {
-                    $opportunityList =  ['820','821','822','823','825','826','827','840','841','842','843'];
+            'namespace' => 'AbstractValidator',
+            'config' => [
+                'is_opportunity_managed_handler' => function ($opportunity) {
+                    $opportunityList =  ['820', '821', '822', '823', '825', '826', '827', '840', '841', '842', '843'];
                     return in_array($opportunity->id, $opportunityList) ? true : false;
                 },
             ]
@@ -78,5 +78,35 @@ return [
                 'inciso2' => [],
             ],
         ],
+        'AldirBlancDataprev' => [
+            'namespace' => 'AldirBlancDataprev',
+            'config' => [
+                'exportador_requer_homologacao' => true,
+                'consolidacao_requer_validacoes' => ['scge']
+            ],
+        ],
+        'Recursos' => ['namespace' => 'AldirBlancValidadorRecurso'],
+        'Financeiro' => [
+            'namespace' => 'AldirBlancValidadorFinanceiro',
+            'config' => [
+                'exportador_requer_validacao' => ['dataprev', 'scge'],
+                'consolidacao_requer_homologacao' => true,
+                'consolidacao_requer_validacoes' => ['scge'],
+            ],
+        ],
+        'SCGE' => [
+            'namespace' => 'AldirBlancValidador',
+            'config' => [
+                'slug' => 'scge',
+                'name' => 'SCGE',
+                'exportador_requer_homologacao' => true,
+                'exportador_requer_validacao' => [],
+                'consolidacao_requer_validacoes' => ['dataprev'],
+                'inciso1' => [
+                    'CPF' => 1567,
+                    'MULHER PROVEDORA DE FAMÍLIA MONOPARENTAL:' => 1573,
+                ]
+            ]
+        ]
     ]
 ];
