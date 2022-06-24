@@ -16,7 +16,7 @@ services:
       - ../compose/local/config.d:/var/www/html/protected/application/conf/config.d
 
       # themes and plugins
-      - ../themes/MapasPernambuco:/var/www/html/protected/application/themes/MapasPernambuco
+      - ../themes/SamplePlugin:/var/www/html/protected/application/themes/SamplePlugin
       - ../plugins/SamplePlugin:/var/www/html/protected/application/plugins/SamplePlugin
       - ../plugins/MultipleLocalAuth:/var/www/html/protected/application/plugins/MultipleLocalAuth
       - ../plugins/MapasBlame:/var/www/html/protected/application/plugins/MapasBlame
@@ -30,7 +30,6 @@ services:
     environment:
       - PENDING_PCACHE_RECREATION_INTERVAL=10
       - APP_MODE=development
-      - ACTIVE_THEME=MapasPernambuco
 
     depends_on:
       - db
