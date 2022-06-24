@@ -16,3 +16,6 @@
 [submodule "plugins/MultipleLocalAuth"]
 	path = plugins/MultipleLocalAuth
 	url = https://github.com/mapasculturais/plugin-MultipleLocalAuth.git
+[submodule "plugins/RegistrationPayments"]
+	path = plugins/RegistrationPayments
+	url = https://github.com/mapasculturais/plugin-RegistrationPayments.git
