@@ -13,3 +13,6 @@
 [submodule "plugins/AldirBlancDataprev"]
 	path = plugins/AldirBlancDataprev
 	url = https://github.com/mapasculturais/plugin-AldirBlancDataprev.git
+[submodule "plugins/MultipleLocalAuth"]
+	path = plugins/MultipleLocalAuth
+	url = https://github.com/mapasculturais/plugin-MultipleLocalAuth.git
