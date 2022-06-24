@@ -23,6 +23,7 @@ services:
       - ../plugins/AldirBlanc:/var/www/html/protected/application/plugins/AldirBlanc
       - ../plugins/AldirBlancDataprev:/var/www/html/protected/application/plugins/AldirBlancDataprev
       - ../plugins/AbstractValidator:/var/www/html/protected/application/plugins/AbstractValidator
+      - ../plugins/AldirBlancValidador:/var/www/html/protected/application/plugins/AldirBlancValidador
 
       - ../compose/overrides/plugins/AldirBlancDataprev/Plugin.php:/var/www/html/protected/application/plugins/AldirBlancDataprev/Plugin.php
       - ../compose/overrides/plugins/AldirBlancDataprev/config-csv-inciso1.php:/var/www/html/protected/application/plugins/AldirBlancDataprev/config-csv-inciso1.php

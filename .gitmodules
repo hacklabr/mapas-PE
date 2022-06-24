@@ -19,3 +19,6 @@
 [submodule "plugins/RegistrationPayments"]
 	path = plugins/RegistrationPayments
 	url = https://github.com/mapasculturais/plugin-RegistrationPayments.git
+[submodule "plugins/AldirBlancValidador"]
+	path = plugins/AldirBlancValidador
+	url = https://github.com/mapasculturais/plugin-AldirBlancValidador.git
