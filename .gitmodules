@@ -13,6 +13,3 @@
 [submodule "plugins/AldirBlancDataprev"]
 	path = plugins/AldirBlancDataprev
 	url = https://github.com/mapasculturais/plugin-AldirBlancDataprev.git
-[submodule "AldirBlancRedirects"]
-	path = AldirBlancRedirects
-	url = https://github.com/mapasculturais/plugin-AldirBlancRedirects.git
