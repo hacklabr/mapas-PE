@@ -31,3 +31,6 @@
 [submodule "plugins/GenericValidator"]
 	path = plugins/GenericValidator
 	url = https://github.com/mapasculturais/plugin-GenericValidator.git
+[submodule "plugins/FinancialValidador"]
+	path = plugins/FinancialValidador
+	url = https://github.com/mapasculturais/Plugin-FinancialValidador.git
