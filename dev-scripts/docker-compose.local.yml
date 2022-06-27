@@ -25,6 +25,8 @@ services:
       - ../plugins/AbstractValidator:/var/www/html/protected/application/plugins/AbstractValidator
       - ../plugins/AldirBlancValidador:/var/www/html/protected/application/plugins/AldirBlancValidador
       - ../plugins/FormCommunication:/var/www/html/protected/application/plugins/FormCommunication
+      - ../plugins/GenericValidator:/var/www/html/protected/application/plugins/GenericValidator
+
 
       - ../compose/overrides/plugins/AldirBlancDataprev/Plugin.php:/var/www/html/protected/application/plugins/AldirBlancDataprev/Plugin.php
       - ../compose/overrides/plugins/AldirBlancDataprev/config-csv-inciso1.php:/var/www/html/protected/application/plugins/AldirBlancDataprev/config-csv-inciso1.php

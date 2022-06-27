@@ -483,5 +483,19 @@ return [
                 },
             ]
         ],
+        "ValidadorHomodador" => [
+            "namespace" => "GenericValidator",
+            "config" => [
+                "homologation_required_for_export" => false,
+                "homologation_required" => false,
+                "enabled_alter_status_on_import" => true,
+                "name" => "validador homologador",
+                'slug' => "validadorhomologador",
+                'is_opportunity_managed_handler' => function ($opportunity) {
+                    $opportunityList =  ['820', '821', '822', '823', '825', '826', '827', '840', '841', '842', '843'];
+                    return in_array($opportunity->id, $opportunityList) ? true : false;
+                },
+            ]
+        ],
     ]
 ];
