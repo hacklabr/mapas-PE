@@ -25,3 +25,9 @@
 [submodule "plugins/FormCommunication"]
 	path = plugins/FormCommunication
 	url = https://github.com/Secult-PE/plugin-FormCommunication.git
+[submodule "plugins/AldirBlancValidadorFinanceiro"]
+	path = plugins/AldirBlancValidadorFinanceiro
+	url = https://github.com/mapasculturais/plugin-AldirBlancValidadorFinanceiro.git
+[submodule "plugins/GenericValidator"]
+	path = plugins/GenericValidator
+	url = https://github.com/mapasculturais/plugin-GenericValidator.git
