@@ -5,6 +5,10 @@ return [
         'EvaluationMethodTechnical' => ['namespace' => 'EvaluationMethodTechnical', 'config' => ['step' => 0.1]],
         'EvaluationMethodSimple' => ['namespace' => 'EvaluationMethodSimple'],
         'EvaluationMethodDocumentary' => ['namespace' => 'EvaluationMethodDocumentary'],
+        'FormCommunication' => [
+            'namespace' => "FormCommunication",
+            'config' => ['sendEmailTo' => 'contato.mapacultural@secult.pe.gov.br']
+        ],
         'RegistrationPayments' => [
             'namespace' => 'RegistrationPayments',
             'config' => [

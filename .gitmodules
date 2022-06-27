@@ -22,3 +22,6 @@
 [submodule "plugins/AldirBlancValidador"]
 	path = plugins/AldirBlancValidador
 	url = https://github.com/mapasculturais/plugin-AldirBlancValidador.git
+[submodule "plugins/FormCommunication"]
+	path = plugins/FormCommunication
+	url = https://github.com/Secult-PE/plugin-FormCommunication.git
