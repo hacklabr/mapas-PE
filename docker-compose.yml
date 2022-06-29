@@ -1,11 +1,15 @@
 version: '3'
 services:
   web:
-    image: hacklab/mapasculturais-nginx:latest
+    build:
+      context: ./
+      dockerfile: compose/nginx/Dockerfile
     restart: always
     volumes:
+     - /dev/null:/var/www/html/index.php
      - ./docker-data/public-files:/var/www/html/files
      - ./docker-data/assets:/var/www/html/assets
+     - ./compose/production/nginx.conf:/etc/nginx/conf.d/default.conf
     ports:
      - "80:80"
      - "443:443"
@@ -33,18 +37,15 @@ services:
       - db
       - redis
     environment:
-      - ACTIVE_THEME=SampleTheme
-
       - LOG_LEVEL=DEBUG
       - LOG_ENABLED=true
       
       - APP_MODE=production
       - APP_LCODE=pt_BR
-#      - APP_LCODE=pt_BR,es_ES # para selecao do idioma baseado no navegador
       
       - REDIS_CACHE=redis
-      - SESSIONS_SAVE_PATH=tcp://redis:6379
-      - PENDING_PCACHE_RECREATION_INTERVAL=5
+      # - SESSIONS_SAVE_PATH=tcp://redis:6379
+      - PENDING_PCACHE_RECREATION_INTERVAL=2
 
       - POSTGRES_PASSWORD=mapas
       - POSTGRES_USER=mapas
@@ -54,7 +55,7 @@ services:
       - redis
 
   redis:
-    image: redis:5
+    image: redis:6
     command: --maxmemory 256Mb --maxmemory-policy allkeys-lru
     
       
