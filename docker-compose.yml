@@ -51,7 +51,7 @@ services:
       - ./compose/overrides/mapas/BaseV1/gallery.php:/protected/application/themes/BaseV1/layouts/parts/gallery.php
       - ./compose/overrides/mapas/BaseV1/link-list.php:/protected/application/themes/BaseV1/layouts/parts/link-list.php
       - ./compose/overrides/mapas/BaseV1/report-evaluations.php:/protected/application/themes/BaseV1/views/opportunity/report-evaluations.php
-      - ./overrides/mapas/Subsite/_variables.scssprotected/application/themes/Subsite/assets/css/sass/_overrides.scss
+      - ./overrides/mapas/Subsite/_variables.scssprotected/application/themes/Subsite/assets/css/sass/_overrides.scss:/protected/application/themes/Subsite/assets/css/sass/_overrides.scss
     links:
       - db
       - redis
@@ -89,5 +89,5 @@ services:
 #    ports:
 #      - "5432:5432"
     volumes:
-      - ./compose/local/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+      - ./../dumps/PE/data.sql:/docker-entrypoint-initdb.d/dump.sql
       - ./docker-data/db-data:/var/lib/postgresql/data
