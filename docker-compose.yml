@@ -31,6 +31,7 @@ services:
       - ./docker-data/public-files:/var/www/html/files
       - ./docker-data/private-files:/var/www/private-files
       - ./docker-data/saas-files:/var/www/SaaS
+      - ./compose/teste.php:/var/www/html/teste.php
 
       # overrides
       - ./compose/overrides/plugins/AldirBlancDataprev/Plugin.php:/var/www/html/protected/application/plugins/AldirBlancDataprev/Plugin.php
