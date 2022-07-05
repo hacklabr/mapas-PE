@@ -1,9 +1,7 @@
 version: '3'
 services:
   web:
-    build:
-      context: ./
-      dockerfile: compose/nginx/Dockerfile
+    image: nginx:latest
     restart: always
     volumes:
      - /dev/null:/var/www/html/index.php
