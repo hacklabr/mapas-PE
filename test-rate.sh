@@ -1,7 +1,7 @@
 #!/bin/bash
 NUM=40
 INTERVAL=0.05
-URL="https://pe.testes.map.as/teste.php"
+URL="https://localhost/teste.php"
 
 COUNTER=0
 for i in "$@"; do
