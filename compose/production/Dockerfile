@@ -23,5 +23,5 @@ COPY compose/overrides/mapas/BaseV1/downloads.php protected/application/themes/B
 COPY compose/overrides/mapas/BaseV1/gallery.php protected/application/themes/BaseV1/layouts/parts/gallery.php
 COPY compose/overrides/mapas/BaseV1/link-list.php protected/application/themes/BaseV1/layouts/parts/link-list.php
 COPY compose/overrides/mapas/BaseV1/report-evaluations.php protected/application/themes/BaseV1/views/opportunity/report-evaluations.php
-COPY overrides/mapas/Subsite/_variables.scssprotected/application/themes/Subsite/assets/css/sass/_overrides.scss protected/application/themes/Subsite/assets/css/sass/_overrides.scss
+COPY compose/overrides/mapas/Subsite/_variables.scss var/www/html/protected/application/themes/Subsite/assets/css/sass/_overrides.scss
 
