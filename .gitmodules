@@ -34,3 +34,6 @@
 [submodule "plugins/FinancialValidador"]
 	path = plugins/FinancialValidador
 	url = https://github.com/mapasculturais/Plugin-FinancialValidador.git
+[submodule "themes/Museus"]
+	path = themes/Museus
+	url = https://github.com/mapasculturais/theme-Museus.git
