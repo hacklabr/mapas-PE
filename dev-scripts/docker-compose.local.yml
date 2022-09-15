@@ -18,6 +18,7 @@ services:
   
       # themes and plugins
       - ../themes/SamplePlugin:/var/www/html/protected/application/themes/SamplePlugin
+      - ../themes/Museus:/var/www/html/protected/application/themes/Museus
       - ../plugins/SamplePlugin:/var/www/html/protected/application/plugins/SamplePlugin
       - ../plugins/MultipleLocalAuth:/var/www/html/protected/application/plugins/MultipleLocalAuth
       - ../plugins/MapasBlame:/var/www/html/protected/application/plugins/MapasBlame
