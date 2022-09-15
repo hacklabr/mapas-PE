@@ -37,3 +37,6 @@
 [submodule "themes/Museus"]
 	path = themes/Museus
 	url = https://github.com/mapasculturais/theme-Museus.git
+[submodule "plugins/SubsiteImporter"]
+	path = plugins/SubsiteImporter
+	url = https://github.com/mapasculturais/plugin-SubsiteImporter.git
