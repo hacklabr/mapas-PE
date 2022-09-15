@@ -14,7 +14,8 @@ services:
 
       - ../compose/common/config.d:/var/www/html/protected/application/conf/conf-common.d
       - ../compose/local/config.d:/var/www/html/protected/application/conf/config.d
-
+      - ../compose/common/config.php:/var/www/html/protected/application/conf/config.php
+  
       # themes and plugins
       - ../themes/SamplePlugin:/var/www/html/protected/application/themes/SamplePlugin
       - ../plugins/SamplePlugin:/var/www/html/protected/application/plugins/SamplePlugin
