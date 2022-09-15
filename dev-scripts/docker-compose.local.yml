@@ -29,6 +29,7 @@ services:
       - ../plugins/FormCommunication:/var/www/html/protected/application/plugins/FormCommunication
       - ../plugins/GenericValidator:/var/www/html/protected/application/plugins/GenericValidator
       - ../plugins/FinancialValidador:/var/www/html/protected/application/plugins/FinancialValidador
+      - ../plugins/SubsiteImporter:/var/www/html/protected/application/plugins/SubsiteImporter
 
       # overrides
       - ../compose/overrides/plugins/AldirBlancDataprev/Plugin.php:/var/www/html/protected/application/plugins/AldirBlancDataprev/Plugin.php
