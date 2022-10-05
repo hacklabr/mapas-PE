@@ -19,7 +19,7 @@ services:
 
   mapasculturais:
     env_file:
-      - mapasculturais.prod.env
+      - .env
     build:
       context: ./
       dockerfile: compose/production/Dockerfile
@@ -47,9 +47,10 @@ services:
       # - SESSIONS_SAVE_PATH=tcp://redis:6379
       - PENDING_PCACHE_RECREATION_INTERVAL=2
 
-      - POSTGRES_PASSWORD=mapas
-      - POSTGRES_USER=mapas
-      - POSTGRES_DB=mapas
+      - DB_PASSWORD=mapas
+      - DB_USER=mapas
+      - DB_DB=mapas
+      - DB_VERSION
     depends_on:
       - db
       - redis
@@ -60,7 +61,7 @@ services:
     
       
   db:
-    image: mdillon/postgis:11
+    image: postgis/postgis:14-master
     restart: always
     environment:
       - POSTGRES_PASSWORD=mapas
