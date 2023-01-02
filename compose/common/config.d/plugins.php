@@ -509,6 +509,7 @@ return [
                     return in_array($opportunity->id, $opportunityList) ? true : false;
                 },
             ]
-        ]
+        ],
+        'SettingsPe' => ['namespace' => "SettingsPe"]
     ]
 ];
