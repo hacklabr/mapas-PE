@@ -30,6 +30,8 @@ services:
       - ../plugins/FinancialValidador:/var/www/html/protected/application/plugins/FinancialValidador
       - ../plugins/SubsiteImporter:/var/www/html/protected/application/plugins/SubsiteImporter
       - ../plugins/SettingsPe:/var/www/html/protected/application/plugins/SettingsPe
+      - ../plugins/CadUnico:/var/www/html/protected/application/plugins/CadUnico
+
 
 
       # overrides
