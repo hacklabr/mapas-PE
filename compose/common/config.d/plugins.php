@@ -510,6 +510,31 @@ return [
                 },
             ]
         ],
-        'SettingsPe' => ['namespace' => "SettingsPe"]
+        'SettingsPe' => ['namespace' => "SettingsPe"],
+        'CadUnico' => [
+            'namespace' => 'CadUnico',
+            'config' => [
+                'enabled' => true,
+                'approved_after_send' => true,
+                'featured' => true,
+                'slug' => 'cadunico',
+                'limit' => 1,
+                'opportunity_id' => env("CADUNICO_OPPORTUNITY_ID", 1),
+                'logo_institution' => 'cadunico/img/logo-pe.png',
+                'logo_footer' => 'img/share.png',
+                'logo_center' => 'cadunico/img/blob-2.png',
+                'schedule_datetime' => '2021-08-30 9:00:00',
+                'schedule_closing' => '2021-09-24 23:59:00',
+                'consolidation_requires_validations' => ['funtrabvalidador', 'sisgedvalidador', 'conselheirosvalidador'],
+                'initial_statement_enabled' => true,
+                'sealrelation_layout' => 'cadunico',
+                "terms" => [
+                    "Declaro que sou maior de 18 anos e resido no estado de Pernambuco.", 
+                    "Declaro me responsabilizar pelas músicas, documentos, textos, imagens e outros arquivos ou meios, cujos direitos autorais estejam protegidos pela legislação vigente.", 
+                    "Declaro que as informações presentes neste formulário são legítimas e têm validade em todo território brasileiro.",
+                    "Declaro que todos os campos deste formulário constituem autodeclaração e, em caso de falsidade, uso ilícito e/ou imoral da mesma, incorrerei nas penalidades previstas no código penal brasileiro (artigos 171 e 299 da Lei n° 2848/40) "
+                ]
+            ]
+        ]
     ]
 ];
