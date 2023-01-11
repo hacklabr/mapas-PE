@@ -5,11 +5,8 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-echo "EDITE ESTE ARQUIVO E DEFINA AS VARIÁVEIS domain, email e staging"
-exit; # E APAGUE ESSA LINHA
-
-domain=(meumapa.gov.br)
-email="webmaster@meumapa.gov.br" # Adding a valid address is strongly recommended
+domain=(homologtemp.pe.gov.br)
+email="contato@pe.gov.br" # Adding a valid address is strongly recommended
 staging=0 # Set to 1 if you're testing your setup to avoid hitting request limits
 
 data_path="./docker-data/certbot"
