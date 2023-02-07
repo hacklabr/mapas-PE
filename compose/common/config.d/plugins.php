@@ -546,6 +546,7 @@ return [
             ]
         ],
         'SettingsPe' => ['namespace' => "SettingsPe"],
+        'ClaimForm' => ['namespace' => 'ClaimForm'],
         'CadUnico' => [
             'namespace' => 'CadUnico',
             'config' => [
