@@ -46,3 +46,6 @@
 [submodule "plugins/CadUnico"]
 	path = plugins/CadUnico
 	url = https://github.com/mapasculturais/plugin-CadUnico.git
+[submodule "plugins/ClaimForm"]
+	path = plugins/ClaimForm
+	url = https://github.com/mapasculturais/plugin-ClaimForm.git
