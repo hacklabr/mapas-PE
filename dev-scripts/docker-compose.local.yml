@@ -31,6 +31,7 @@ services:
       - ../plugins/SubsiteImporter:/var/www/html/protected/application/plugins/SubsiteImporter
       - ../plugins/SettingsPe:/var/www/html/protected/application/plugins/SettingsPe
       - ../plugins/CadUnico:/var/www/html/protected/application/plugins/CadUnico
+      - ../plugins/ClaimForm:/var/www/html/protected/application/plugins/ClaimForm
 
 
 
@@ -51,7 +52,6 @@ services:
       - ../compose/overrides/mapas/BaseV1/gallery.php:/protected/application/themes/BaseV1/layouts/parts/gallery.php
       - ../compose/overrides/mapas/BaseV1/link-list.php:/protected/application/themes/BaseV1/layouts/parts/link-list.php
       - ../compose/overrides/mapas/BaseV1/report-evaluations.php:/protected/application/themes/BaseV1/views/opportunity/report-evaluations.php
-      - ../compose/overrides/mapas/Subsite/_variables.scss:/protected/application/themes/Subsite/assets/css/sass/_variables.scss
     environment:
       - PENDING_PCACHE_RECREATION_INTERVAL=10
       - JOBS_INTERVAL=10
