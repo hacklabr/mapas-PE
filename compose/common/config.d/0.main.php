@@ -1,11 +1,13 @@
 <?php
 
 use MapasCulturais\i;
+$museus_domain = env("DOMAIN_MUSEUS", "www.museusdepernambuco.pe.gov.br");
+$museus_mapas = env("DOMAIN_MAPAS", "www.mapacultural.pe.gov.br");
 
-if ($_SERVER['HTTP_HOST'] === 'homolog.museus.mapacultural.pe.gov.br') {
-    $base_url = 'https://homolog.museus.mapacultural.pe.gov.br/';
+if ($_SERVER['HTTP_HOST'] === $museus_domain) {
+    $base_url = "https://{$museus_domain}/";
 } else {
-    $base_url = 'https://www.aldirblanchomolog.mapacultural.pe.gov.br/';
+    $base_url = "https://{$museus_mapas}/";
 }
 
 return [
