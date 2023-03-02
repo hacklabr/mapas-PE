@@ -2,10 +2,10 @@
 
 use MapasCulturais\i;
 
-if ($_SERVER['HTTP_HOST'] === 'www.museusdepernambuco.pe.gov.br') {
-    $base_url = 'https://www.museusdepernambuco.pe.gov.br/';
+if ($_SERVER['HTTP_HOST'] === 'homolog.museus.mapacultural.pe.gov.br') {
+    $base_url = 'https://homolog.museus.mapacultural.pe.gov.br/';
 } else {
-    $base_url = 'https://www.mapacultural.pe.gov.br/';
+    $base_url = 'https://www.aldirblanchomolog.mapacultural.pe.gov.br/';
 }
 
 return [
