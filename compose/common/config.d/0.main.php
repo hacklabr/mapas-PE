@@ -19,12 +19,8 @@ return [
     'base.assetUrl' => $base_url . 'assets/',
     'base.url' => $base_url,
 
-    'mailer.user' => "mapacultural",
-    'mailer.psw'  => "#-m@p@-!",
-    'mailer.server' => 'antispamout.ati.pe.gov.br',
     'mailer.protocol' => null, // 'tls',
     'mailer.port'   => '587',
-    'mailer.from' => 'naoresponda@secult.pe.gov.br',
 
     'namespaces' => array(
         'MapasCulturais\Themes' => THEMES_PATH,
