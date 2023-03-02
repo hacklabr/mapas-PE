@@ -1,5 +1,12 @@
-<?php 
+<?php
+
 use MapasCulturais\i;
+
+if ($_SERVER['HTTP_HOST'] === 'www.museusdepernambuco.pe.gov.br') {
+    $base_url = 'https://www.museusdepernambuco.pe.gov.br/';
+} else {
+    $base_url = 'https://www.mapacultural.pe.gov.br/';
+}
 
 return [
     'app.siteName' => env('SITE_NAME', 'Mapa Cultural de pernambuco'),
@@ -8,6 +15,16 @@ return [
     'themes.active' => env('ACTIVE_THEME', 'MapasCulturais\Themes\BaseV1'),
 
     'app.lcode' => env('APP_LCODE', 'pt_BR,es_ES'),
+
+    'base.assetUrl' => $base_url . 'assets/',
+    'base.url' => $base_url,
+
+    'mailer.user' => "mapacultural",
+    'mailer.psw'  => "#-m@p@-!",
+    'mailer.server' => 'antispamout.ati.pe.gov.br',
+    'mailer.protocol' => null, // 'tls',
+    'mailer.port'   => '587',
+    'mailer.from' => 'naoresponda@secult.pe.gov.br',
 
     'namespaces' => array(
         'MapasCulturais\Themes' => THEMES_PATH,
