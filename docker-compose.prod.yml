@@ -85,5 +85,5 @@ services:
       - POSTGRES_USER=metabase
       - POSTGRES_DB=metabase
     volumes:
-      - ../compose/metabase.sql.gz:/docker-entrypoint-initdb.d/dump.sql.gz
-      - ../docker-data/metabase-data:/var/lib/postgresql/data
+      - ./compose/metabase.sql.gz:/docker-entrypoint-initdb.d/dump.sql.gz
+      - ./docker-data/metabase-data:/var/lib/postgresql/data
