@@ -9,7 +9,7 @@ services:
      - ./docker-data/public-files:/var/www/html/files
      - ./docker-data/assets:/var/www/html/assets
 
-     - ./compose/production/nginx.conf:/etc/nginx/conf.d/default.conf
+     - ./compose/production/nginx-prod.conf:/etc/nginx/conf.d/default.conf
     ports:
      - "80:80"
     depends_on:
