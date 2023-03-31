@@ -9,9 +9,7 @@ services:
      - ./docker-data/public-files:/var/www/html/files
      - ./docker-data/assets:/var/www/html/assets
 
-     - ./compose/production/nginx.conf:/etc/nginx/conf.d/default.conf
-     - ./docker-data/certbot/conf:/etc/letsencrypt
-     - ./docker-data/certbot/www:/var/www/certbot
+     - ./compose/production/nginx-homolog.conf:/etc/nginx/conf.d/default.conf
     ports:
      - "80:80"
      - "443:443"
