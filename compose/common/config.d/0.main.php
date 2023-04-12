@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('America/Recife');
+
 use MapasCulturais\i;
 $museus_domain = env("DOMAIN_MUSEUS", "www.museusdepernambuco.pe.gov.br");
 $museus_mapas = env("DOMAIN_MAPAS", "www.mapacultural.pe.gov.br");
