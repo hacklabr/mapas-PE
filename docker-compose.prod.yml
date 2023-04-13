@@ -73,8 +73,7 @@ services:
       - MB_DB_HOST=db_metabase 
     ports:
       - "3000:3000"
-    volumes:
-      - ../docker-data/metabase:/metabase-data
+  
     depends_on:
       - db_metabase
       
@@ -85,5 +84,5 @@ services:
       - POSTGRES_USER=metabase
       - POSTGRES_DB=metabase
     volumes:
-      - ./compose/metabase.sql.gz:/docker-entrypoint-initdb.d/dump.sql.gz
-      - ./docker-data/metabase-data:/var/lib/postgresql/data
+      - ./compose/db/metabase.sql.gz:/docker-entrypoint-initdb.d/dump.sql.gz
+      - ./docker-data/metabase-data-20230413:/var/lib/postgresql/data
