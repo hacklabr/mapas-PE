@@ -1,20 +1,13 @@
 #!/bin/bash
 
-AMBIENTE=$1
-
-if [ -z "$AMBIENTE" ]; then
-
-    echo "Informe qual ambiente deseja executar homolog ou prod  Ex.: ./logs.sh prod"
-    exit
-
-fi
+ENV=$(cat environment)
 
 docker pull hacklab/mapasculturais:latest
 git pull
 
 git submodule update
 
-docker-compose -f docker-compose.$AMBIENTE.yml build --no-cache
+docker-compose -f docker-compose.$ENV.yml build --no-cache
 
-./stop.sh $AMBIENTE
-./start.sh $AMBIENTE
+./stop.sh $ENV
+./start.sh $ENV

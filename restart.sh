@@ -1,12 +1,5 @@
 #!/bin/bash
 
-AMBIENTE=$1
+ENV=$(cat environment)
 
-if [ -z "$AMBIENTE" ]; then
-
-    echo "Informe qual ambiente deseja executar homolog ou prod  Ex.: ./logs.sh prod"
-    exit
-
-fi
-
-docker-compose -f docker-compose.$AMBIENTE.yml restart
+docker-compose -f docker-compose.$ENV.yml restart
