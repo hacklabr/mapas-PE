@@ -43,11 +43,14 @@ fi
 
 if [ $DOWN = "1" ]; then
    docker-compose -f docker-compose.local.yml down
+   docker rm mapas-pe
 fi
 
-NAME=mapas
+NAME=mapas-pe
 
 docker-compose -f docker-compose.local.yml run --name=$NAME --service-ports  mapas
 
 docker-compose -f docker-compose.local.yml down
+
+docker rm mapas-pe
 cd $CDIR
