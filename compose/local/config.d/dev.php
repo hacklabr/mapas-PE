@@ -8,6 +8,8 @@ return [
     'slim.log.level'        => \Slim\Log::DEBUG,
     'slim.log.enabled'      => true,
 
+    'app.useAssetsUrlCache' => false,
+
     // app.log.hook aceita regex para filtrar quais hooks são exibidos no output, 
     // ex: "panel", "^template", "template\(site\.index\.*\):before"
     'app.log.hook'          => false, 
