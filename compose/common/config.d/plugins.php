@@ -555,7 +555,7 @@ return [
                 'featured' => true,
                 'slug' => 'cadunico',
                 'limit' => 1,
-                'opportunity_id' => env("CADUNICO_OPPORTUNITY_ID", 1),
+                'opportunity_id' => env("CADUNICO_OPPORTUNITY_ID", 970),
                 'logo_institution' => 'cadunico/img/logo-pe.png',
                 'logo_footer' => 'img/share.png',
                 'logo_center' => 'cadunico/img/blob-2.png',
