@@ -2,6 +2,10 @@
 
 date_default_timezone_set('America/Recife');
 
+$timeout = 7200;
+ini_set( "session.gc_maxlifetime", $timeout );
+ini_set( "session.cookie_lifetime", $timeout );
+
 use MapasCulturais\i;
 $museus_domain = env("DOMAIN_MUSEUS", "www.museusdepernambuco.pe.gov.br");
 $museus_mapas = env("DOMAIN_MAPAS", "www.mapacultural.pe.gov.br");
