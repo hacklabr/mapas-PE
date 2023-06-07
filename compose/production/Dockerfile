@@ -15,7 +15,7 @@ COPY compose/overrides/plugins/AldirBlancValidador/Plugin.php var/www/html/prote
 COPY compose/overrides/plugins/FinancialValidador/Plugin.php var/www/html/protected/application/plugins/FinancialValidador/Plugin.php
 COPY compose/overrides/mapas/conf/registrations.php var/www/html/protected/application/conf/conf-base.d/registrations.php
 COPY compose/overrides/mapas/conf/notification-types.php var/www/html/protected/application/conf/notification-types.php
-COPY compose/overrides/mapas/conf/taxonomies.php var/www/html/protected/application/conf/taxonomies.php
+# COPY compose/overrides/mapas/conf/taxonomies.php var/www/html/protected/application/conf/taxonomies.php
 COPY compose/overrides/mapas/lib/EntityAgentRelation.php var/www/html/protected/application/lib/MapasCulturais/Traits/EntityAgentRelation.php
 COPY compose/overrides/mapas/modules/CompliantSuggestion/ng.modules.compliantSuggestion.js var/www/html/protected/application/lib/modules/CompliantSuggestion/assets/js/ng.modules.compliantSuggestion.js
 COPY compose/overrides/mapas/modules/ProfileCompletion/profile-complete-message.php var/www/html/protected/application/lib/modules/ProfileCompletion/layouts/parts/profile-complete-message.php
