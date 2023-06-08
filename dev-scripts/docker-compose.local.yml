@@ -22,6 +22,7 @@ services:
       - ../plugins/SamplePlugin:/var/www/html/protected/application/plugins/SamplePlugin
       - ../plugins/MultipleLocalAuth:/var/www/html/protected/application/plugins/MultipleLocalAuth
       - ../plugins/MapasBlame:/var/www/html/protected/application/plugins/MapasBlame
+      - ../plugins/SubsiteMuseusSwitcher:/var/www/html/protected/application/plugins/SubsiteMuseusSwitcher
       - ../plugins/AldirBlanc:/var/www/html/protected/application/plugins/AldirBlanc
       - ../plugins/AldirBlancDataprev:/var/www/html/protected/application/plugins/AldirBlancDataprev
       - ../plugins/AbstractValidator:/var/www/html/protected/application/plugins/AbstractValidator
