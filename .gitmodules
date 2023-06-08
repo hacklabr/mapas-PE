@@ -49,3 +49,6 @@
 [submodule "plugins/ClaimForm"]
 	path = plugins/ClaimForm
 	url = https://github.com/mapasculturais/plugin-ClaimForm.git
+[submodule "plugins/SubsiteMuseusSwitcher"]
+	path = plugins/SubsiteMuseusSwitcher
+	url = https://github.com/erleibiazzio/SubsiteMuseusSwitcher.git
