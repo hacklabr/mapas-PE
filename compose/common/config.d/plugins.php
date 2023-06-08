@@ -571,6 +571,13 @@ return [
                     "Declaro que todos os campos deste formulário constituem autodeclaração e, em caso de falsidade, uso ilícito e/ou imoral da mesma, incorrerei nas penalidades previstas no código penal brasileiro (artigos 171 e 299 da Lei n° 2848/40) "
                 ]
             ]
+        ],
+        'SubsiteMuseusSwitcher' => [
+            'namespace' => 'SubsiteMuseusSwitcher',
+            'config' => [
+                "main_site_id" => 1,
+                "museu_site_id" => 2,
+            ]
         ]
     ]
 ];
