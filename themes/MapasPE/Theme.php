@@ -9,6 +9,17 @@ class Theme extends \MapasCulturais\Themes\BaseV2\Theme {
     function _init(){
         parent::_init();
 
-        // eval(\psy\sh());
+        $app = App::i();
+        
+        // Manifest do five icon
+        $app->hook('GET(site.webmanifest)', function() use ($app) {
+            /** @var \MapasCulturais\Controller $this */
+            $this->json([
+                'icons' => [
+                    [ 'src' => $app->view->asset('img/favicon.jpeg', false), 'type' => 'image/png', 'sizes' => '192x192' ],
+                    [ 'src' => $app->view->asset('img/favicon.ico', false), 'type' => 'image/png', 'sizes' => '512x512' ]
+                ],
+            ]);
+        });
     }
 }
