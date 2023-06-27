@@ -16,8 +16,8 @@ class Theme extends \MapasCulturais\Themes\BaseV2\Theme {
             /** @var \MapasCulturais\Controller $this */
             $this->json([
                 'icons' => [
-                    [ 'src' => $app->view->asset('img/favicon.jpeg', false), 'type' => 'image/png', 'sizes' => '192x192' ],
-                    [ 'src' => $app->view->asset('img/favicon.ico', false), 'type' => 'image/png', 'sizes' => '512x512' ]
+                    [ 'src' => $app->view->asset('img/favicon-192x192.png', false), 'type' => 'image/png', 'sizes' => '192x192' ],
+                    [ 'src' => $app->view->asset('img/favicon-512x512.png', false), 'type' => 'image/png', 'sizes' => '512x512' ]
                 ],
             ]);
         });
