@@ -1,5 +1,6 @@
 <?php
 namespace MapasPE;
+use MapasCulturais\App;
 
 class Theme extends \MapasCulturais\Themes\BaseV2\Theme {
     static function getThemeFolder() {
