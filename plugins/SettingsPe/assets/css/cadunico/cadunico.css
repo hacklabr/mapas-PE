@@ -1,0 +1,182 @@
+/* .cadunico {
+    margin: auto;
+    width: 33.33333%;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+.card {
+    font-size: 19px;
+    aspect-ratio: 643/312;
+    background-color: #ccc;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 1px solid;
+    border-radius: 4px;
+    position: relative;
+    max-width: 1007px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/* Left side */
+.card--left .user-img {
+    aspect-ratio: 1/1;
+    max-width: 10.42em;
+    border: 4px solid #ffc000;
+    margin-top: 44.5%;
+    margin-left: 7.83em;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card--left .user-img img {
+    max-width: 100%;
+}
+
+/* Right side */
+.card--right {
+    padding: .66em 1.33em;
+    margin-left: 1.08em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card--right .title {
+    color: #c55a11;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.card--right .user-name {
+    font-size: 2.7em;
+    line-height: 1em;
+    font-weight: 700;
+}
+
+.card--right .user-info {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.card--right .user-info__name {
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+.card--right .user-info__notation {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.card--right .user-description {
+    font-size: .9em;
+    line-height: 1.1em;
+    margin: 0.25em 0;
+}
+
+.card--right .user-tags {
+    display: flex;
+    flex-direction: column;
+    gap: .66em;
+}
+
+.card--right .user-tags .tag-group {
+    display: flex;
+    flex-direction: column;
+    gap: .33em;
+    align-items: flex-start;
+}
+
+.card--right .user-tags .tag-group .tag-group__title {
+    font-size: .9em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #787374;
+}
+
+.tag-group__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .33em;
+}
+
+.card--right .user-tags .tag-group .tag-group__content .tag {
+    background-color: #c55a11;
+    display: inline;
+    font-size: 1.1em;
+    border-radius: 5px;
+    padding: .33em .83em;
+    min-width: 108px;
+    text-align: center;
+    font-weight: 500;
+    color: #f7e9e0;
+}
+
+.cadunico .text{
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 1007px;
+    width: 100%;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0;
+    gap: 8px 0;
+}
+
+.logos .logo {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:900px) {
+    .card {
+        font-size: 17px;
+    }
+}
+
+@media (max-width:700px) {
+    .card {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:600px) {
+    .card {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:450px) {
+    .card {
+        font-size: 10px;
+    }
+    .card--right .user-name {
+        font-size: 2.3em;
+    }
+}
+
+@media (max-width:370px) {
+    .card {
+        font-size: 9px;
+    }
+}
