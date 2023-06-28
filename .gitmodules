@@ -40,9 +40,6 @@
 [submodule "plugins/SubsiteImporter"]
 	path = plugins/SubsiteImporter
 	url = https://github.com/mapasculturais/plugin-SubsiteImporter.git
-[submodule "plugins/SettingsPe"]
-	path = plugins/SettingsPe
-	url = https://github.com/erleibiazzio/SettingsPe.git
 [submodule "plugins/CadUnico"]
 	path = plugins/CadUnico
 	url = https://github.com/mapasculturais/plugin-CadUnico.git
