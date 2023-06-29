@@ -3,9 +3,9 @@
     <div class="box">
         <h1><?php echo $app->view->renderMarkdown($this->dict('home: title',false)); ?></h1>
         <p><?php echo $app->view->renderMarkdown($this->dict('home: welcome',false)); ?></p>
-        <?php $this->applyTemplateHook('home-search-form','begin'); ?>
+        <?php $this->applyTemplateHook('home-search-form','before'); ?>
         <form id="home-search-form" class="clearfix" ng-non-bindable>
-            <?php $this->applyTemplateHook('home-search-form','before'); ?>
+            <?php $this->applyTemplateHook('home-search-form','begin'); ?>
             <input tabindex="1" id="campo-de-busca" class="search-field" type="text" name="campo-de-busca" placeholder="<?php \MapasCulturais\i::esc_attr_e("Digite uma palavra-chave");?>"/>
             <div id="home-search-filter" class="dropdown" data-searh-url-template="<?php echo $app->createUrl('site','search'); ?>##(global:(enabled:({{entity}}:!t),filterEntity:{{entity}}),{{entity}}:(keyword:'{{keyword}}'))">
                 <div class="placeholder"><span class="icon icon-search"></span><?php \MapasCulturais\i::_e("Buscar");?></div>

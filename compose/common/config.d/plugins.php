@@ -549,10 +549,12 @@ return [
             'namespace' => 'SettingsPe',
             'config' => [
                 'home-banners' => [
-                    'label' => 'CEPC - Processo eletivo para formação do colégio eleitoral para <strong>renovação do conselho</strong>',
-                    'alt' => 'CEPC - Processo eletivo para formação do colégio eleitoral para renovação do conselho',
-                    'url' => '/oportunidade/1016',
-                    'image' => 'img/banner-oportunidade.png'
+                    [
+                        'label' => 'CEPC - Processo eletivo para formação do colégio eleitoral para <strong>renovação do conselho</strong>',
+                        'alt' => 'CEPC - Processo eletivo para formação do colégio eleitoral para renovação do conselho',
+                        'url' => '/oportunidade/1016',
+                        'image' => 'img/banner-oportunidade.png'
+                    ]
                 ] 
             ]
         ],
