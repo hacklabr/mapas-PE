@@ -49,3 +49,6 @@
 [submodule "plugins/ClaimForm"]
 	path = plugins/ClaimForm
 	url = https://github.com/mapasculturais/plugin-ClaimForm.git
+[submodule "plugins/Metabase"]
+	path = plugins/Metabase
+	url = https://github.com/mapasculturais/plugin-Metabase.git
