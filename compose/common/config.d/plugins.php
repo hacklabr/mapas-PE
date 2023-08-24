@@ -552,7 +552,7 @@ return [
                     [
                         'label' => 'CEPC - Processo eletivo para formação do colégio eleitoral para <strong>renovação do conselho</strong>',
                         'alt' => 'CEPC - Processo eletivo para formação do colégio eleitoral para renovação do conselho',
-                        'url' => '/projeto/2343',
+                        'url' => '/projeto/2346',
                         'image' => 'img/banner-LPG.jpeg'
                     ]
                 ] 
