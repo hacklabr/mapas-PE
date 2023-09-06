@@ -24,3 +24,11 @@ COPY compose/overrides/mapas/modules/Reports/registrationsDraftVsSent.php var/ww
 # COPY compose/overrides/mapas/BaseV1/gallery.php protected/application/themes/BaseV1/layouts/parts/gallery.php
 # COPY compose/overrides/mapas/BaseV1/link-list.php protected/application/themes/BaseV1/layouts/parts/link-list.php
 COPY compose/overrides/mapas/BaseV1/report-evaluations.php protected/application/themes/BaseV1/views/opportunity/report-evaluations.php
+
+
+
+WORKDIR /var/www/html/protected
+
+RUN pnpm install --recursive && pnpm run build 
+
+WORKDIR /var/www/html
