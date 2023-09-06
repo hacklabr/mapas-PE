@@ -173,7 +173,7 @@ return [
                                 'label' => 'agentes individuais cadastrados',
                                 'entity' => Entities\Agent::class,
                                 'query' => [
-                                    '@verified' => 1,
+                                    'type' => 'EQ(1)'
                                 ],
                             ],
                         ],
@@ -188,6 +188,13 @@ return [
                                 'label' => 'espaços cadastrados',
                                 'entity' => Entities\Space::class,
                                 'query' => [],
+                            ],
+                            [
+                                'label' => 'espaços certificados',
+                                'entity' => Entities\Space::class,
+                                'query' => [
+                                    '@verified' => 1
+                                ],
                             ],
                         ],
                     ],
