@@ -1,51 +1,18 @@
 [submodule "plugins/MapasBlame"]
 	path = plugins/MapasBlame
 	url = https://github.com/mapasculturais/plugin-MapasBlame.git
-[submodule "plugins/AbstractValidator"]
-	path = plugins/AbstractValidator
-	url = https://github.com/mapasculturais/plugin-AbstractValidator.git
-[submodule "plugins/Accessibility"]
-	path = plugins/Accessibility
-	url = https://github.com/tiagodfdev/accessibility-mapas.git
-[submodule "plugins/AldirBlanc"]
-	path = plugins/AldirBlanc
-	url = https://github.com/mapasculturais/plugin-AldirBlanc.git
-[submodule "plugins/AldirBlancDataprev"]
-	path = plugins/AldirBlancDataprev
-	url = https://github.com/mapasculturais/plugin-AldirBlancDataprev.git
 [submodule "plugins/MultipleLocalAuth"]
 	path = plugins/MultipleLocalAuth
 	url = https://github.com/mapasculturais/plugin-MultipleLocalAuth.git
-[submodule "plugins/RegistrationPayments"]
-	path = plugins/RegistrationPayments
-	url = https://github.com/mapasculturais/plugin-RegistrationPayments.git
-[submodule "plugins/AldirBlancValidador"]
-	path = plugins/AldirBlancValidador
-	url = https://github.com/mapasculturais/plugin-AldirBlancValidador.git
 [submodule "plugins/FormCommunication"]
 	path = plugins/FormCommunication
 	url = https://github.com/Secult-PE/plugin-FormCommunication.git
-[submodule "plugins/AldirBlancValidadorFinanceiro"]
-	path = plugins/AldirBlancValidadorFinanceiro
-	url = https://github.com/mapasculturais/plugin-AldirBlancValidadorFinanceiro.git
-[submodule "plugins/GenericValidator"]
-	path = plugins/GenericValidator
-	url = https://github.com/mapasculturais/plugin-GenericValidator.git
-[submodule "plugins/FinancialValidador"]
-	path = plugins/FinancialValidador
-	url = https://github.com/mapasculturais/Plugin-FinancialValidador.git
 [submodule "themes/Museus"]
 	path = themes/Museus
 	url = https://github.com/mapasculturais/theme-Museus.git
-[submodule "plugins/SubsiteImporter"]
-	path = plugins/SubsiteImporter
-	url = https://github.com/mapasculturais/plugin-SubsiteImporter.git
 [submodule "plugins/SettingsPe"]
 	path = plugins/SettingsPe
 	url = https://github.com/erleibiazzio/SettingsPe.git
-[submodule "plugins/CadUnico"]
-	path = plugins/CadUnico
-	url = https://github.com/mapasculturais/plugin-CadUnico.git
 [submodule "plugins/ClaimForm"]
 	path = plugins/ClaimForm
 	url = https://github.com/mapasculturais/plugin-ClaimForm.git
