@@ -7,9 +7,6 @@
 [submodule "plugins/FormCommunication"]
 	path = plugins/FormCommunication
 	url = https://github.com/Secult-PE/plugin-FormCommunication.git
-[submodule "themes/Museus"]
-	path = themes/Museus
-	url = https://github.com/mapasculturais/theme-Museus.git
 [submodule "plugins/SettingsPe"]
 	path = plugins/SettingsPe
 	url = https://github.com/erleibiazzio/SettingsPe.git
@@ -19,3 +16,6 @@
 [submodule "plugins/Metabase"]
 	path = plugins/Metabase
 	url = https://github.com/mapasculturais/plugin-Metabase
+[submodule "themes/MapasMuseus"]
+	path = themes/MapasMuseus
+	url = https://github.com/mapasculturais/theme-Museus

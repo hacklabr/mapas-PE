@@ -6,10 +6,12 @@ use MapasCulturais\i;
 $museus_domain = env("DOMAIN_MUSEUS", "www.museusdepernambuco.pe.gov.br");
 $museus_mapas = env("DOMAIN_MAPAS", "www.mapacultural.pe.gov.br");
 
+$protocol = str_ends_with($museus_mapas,'localhost') ? 'http' : 'https';
+
 if ($_SERVER['HTTP_HOST'] === $museus_domain) {
-    $base_url = "https://{$museus_domain}/";
+    $base_url = "{$protocol}://{$museus_domain}/";
 } else {
-    $base_url = $museus_mapas == 'localhost' ? "http://{$museus_mapas}/" : "https://{$museus_mapas}/";
+    $base_url = "{$protocol}://{$museus_mapas}/";
 }
 
 return [
@@ -18,7 +20,7 @@ return [
 
     'themes.active' => 'MapasPE',
 
-    'app.lcode' => env('APP_LCODE', 'pt_BR,es_ES'),
+    'app.lcode' => 'pt_BR',
 
     'base.assetUrl' => $base_url . 'assets/',
     'base.url' => $base_url,
