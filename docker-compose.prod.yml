@@ -27,11 +27,11 @@ services:
     ports:
       - "9000:9000"
     volumes:
+      - ./compose/production/fpm.conf:/usr/local/etc/php-fpm.d/www.conf
       - ./docker-data/assets:/var/www/html/assets
       - ./docker-data/public-files:/var/www/html/files
       - ./docker-data/private-files:/var/www/private-files
       - ./docker-data/saas-files:/var/www/SaaS
-      - ./compose/teste.php:/var/www/html/teste.php
 
     links:
       - redis
