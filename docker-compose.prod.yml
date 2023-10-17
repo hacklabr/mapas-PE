@@ -35,6 +35,7 @@ services:
 
     links:
       - redis
+      - sessions
     environment:
       - LOG_LEVEL=DEBUG
       - LOG_ENABLED=true
@@ -48,18 +49,19 @@ services:
 
     depends_on:
       - redis
+      - sessions
 
   sessions:
     image: redis:6
     restart: unless-stopped
-    command: --maxmemory 384Mb --maxmemory-policy allkeys-lru
+    command: --maxmemory 1024Mb --maxmemory-policy allkeys-lru
     volumes:
       - ./docker-data/sessions:/data
 
   redis:
     image: redis:6
     restart: unless-stopped
-    command: --maxmemory 384Mb --maxmemory-policy allkeys-lru
+    command: --maxmemory 1024Mb --maxmemory-policy allkeys-lru
    
 
   metabase:
