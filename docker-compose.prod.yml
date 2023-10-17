@@ -89,4 +89,4 @@ services:
       - POSTGRES_DB=metabase
     volumes:
       - ./compose/db/metabase.sql.gz:/docker-entrypoint-initdb.d/dump.sql.gz
-      - ./docker-data/metabase-data-20230413:/var/lib/postgresql/data
+      - ./docker-data/metabase-data-20230417:/var/lib/postgresql/data
