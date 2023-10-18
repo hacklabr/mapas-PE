@@ -1,3 +1,4 @@
 #!/bin/bash
+ENV=$(cat environment)
 
-docker-compose exec mapasculturais bash
+docker-compose -f docker-compose.$ENV.yml exec mapasculturais bash
