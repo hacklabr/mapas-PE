@@ -45,8 +45,6 @@ services:
       
       - REDIS_CACHE=redis
       - SESSIONS_SAVE_PATH=tcp://sessions:6379
-      - PENDING_PCACHE_RECREATION_INTERVAL=1
-      - JOBS_INTERVAL=1
       - SESSION_TIMEOUT=43200 # 12 horas
 
     depends_on:
