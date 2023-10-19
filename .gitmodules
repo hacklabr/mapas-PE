@@ -49,3 +49,6 @@
 [submodule "plugins/SubsiteMuseusSwitcher"]
 	path = plugins/SubsiteMuseusSwitcher
 	url = https://github.com/erleibiazzio/SubsiteMuseusSwitcher.git
+[submodule "plugins/ValuersManagement"]
+	path = plugins/ValuersManagement
+	url = https://github.com/mapasculturais/plugin-ValuersManagement
