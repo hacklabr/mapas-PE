@@ -7,6 +7,7 @@ on:
     branches:
     - "master"
     - "develop"
+    - "basev2"
 
 jobs:
   docker:
