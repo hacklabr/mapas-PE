@@ -17,6 +17,11 @@ jobs:
         name: Checkout
         uses: actions/checkout@v3
       -
+        name: Invalidate Docker cache
+        run: |
+          # Use a unique cache key to force cache invalidation
+          echo "::set-env name=CACHE_KEY::$(date)"
+        -
         name: Docker meta
         id: meta
         uses: docker/metadata-action@v4
@@ -54,3 +59,5 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+        env:
+          CACHE_KEY: ${{ env.CACHE_KEY }}
