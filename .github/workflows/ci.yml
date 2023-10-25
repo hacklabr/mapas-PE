@@ -19,8 +19,9 @@ jobs:
       -
         name: Invalidate Docker cache
         run: |
-          # Use a unique cache key to force cache invalidation
-          echo "::set-env name=CACHE_KEY::$(date)"
+          echo "CACHE_KEY=$(date)" >> env.list
+          echo "##[set-output name=CACHE_KEY]${{ steps.set-cache-key.outputs.CACHE_KEY }}"
+        id: set-cache-key
       -
         name: Docker meta
         id: meta
@@ -60,4 +61,8 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
         env:
-          CACHE_KEY: ${{ env.CACHE_KEY }}
+          CACHE_KEY: ${{ steps.set-cache-key.outputs.CACHE_KEY }}
+
+      - name: Cleanup
+        run: |
+          rm env.list
