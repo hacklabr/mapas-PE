@@ -21,7 +21,8 @@ jobs:
         run: |
           # Use a unique cache key to force cache invalidation
           echo "::set-env name=CACHE_KEY::$(date)"
-        -
+      - # Add a line break here
+      -
         name: Docker meta
         id: meta
         uses: docker/metadata-action@v4
