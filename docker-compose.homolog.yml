@@ -37,6 +37,7 @@ services:
     links:
       - db
       - redis
+      - sessions
     environment:
       - LOG_LEVEL=DEBUG
       - LOG_ENABLED=true
@@ -45,7 +46,8 @@ services:
       - APP_LCODE=pt_BR
       
       - REDIS_CACHE=redis
-      - SESSIONS_SAVE_PATH=tcp://redis:6379
+      - SESSIONS_SAVE_PATH=tcp://sessions:6379
+      - SESSION_TIMEOUT=43200 # 12 horas
       - PENDING_PCACHE_RECREATION_INTERVAL=2
 
       - DB_PASSWORD=mapas
@@ -55,6 +57,14 @@ services:
     depends_on:
       - db
       - redis
+      - sessions
+      
+  sessions:
+    image: redis:6
+    restart: unless-stopped
+    command: --maxmemory 1024Mb --maxmemory-policy allkeys-lru
+    volumes:
+      - ./docker-data/sessions:/data
 
   redis:
     image: redis:6
