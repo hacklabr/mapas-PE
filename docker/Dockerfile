@@ -1,4 +1,4 @@
-FROM hacklab/mapasculturais:saas-PE
+FROM hacklab/mapasculturais:saas
 
 COPY themes /var/www/src/themes
 COPY plugins /var/www/src/plugins
