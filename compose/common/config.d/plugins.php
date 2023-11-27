@@ -15,7 +15,7 @@ return [
             'namespace' => 'RegistrationPayments',
             'config' => [
                 'cnab240_enabled' => true, // Habilita ou Desabilita exportação do CNAB240
-                'opportunitys_cnab_active' => ['820', '821', '822', '823', '825', '826', '827', '840', '841', '842', '843'],
+                'opportunitys_cnab_active' => ['820', '821', '822', '823', '825', '826', '827', '840', '841', '842', '843', '1120'],
                 'cnab240_company_data' => [
                     'nome_empresa' => 'SECRETARIA DE CULTURA PE',
                     'tipo_inscricao' => '2',
@@ -32,6 +32,36 @@ return [
                     'operacao' => 'C',
                 ],
                 "opportunitysCnab" => [ // Configurações de oportunidades
+                    "1120" => [
+                        "settings" => [ // Configurações padrões
+                            "social_type" => [ // Tipo de proponente (Pessoa Fisica ou Pessoa Jurídica) Pessoa Fisica = 1 Pessoa Jurídica = 2
+                                "Pessoa física" => "1",
+                                "Pessoa jurídica de natureza cultural (MEI)" => "2",
+                            ],
+                            "release_type" => [
+                                1 => "01", // Corrente BB
+                                2 => "05", // Poupança BB
+                                3 => "03", // Outros bancos
+                            ],
+                        ],
+                        "social_type" => 'category', // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "category",
+                            1 => 27829,
+                            2 => 27832,
+                        ],
+                        "proponent_document" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "category",
+                            1 => 27818,
+                            2 => 27820,
+                        ],
+                        "account_type" => 27815, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 27826, // ID campo que define a o banco do proponente
+                        "branch" => 27816, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 27823, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 27824, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 27825, // ID campo que define o DV da conta bancária do proponente
+                    ],
                     "820" => [
                         "settings" => [ // Configurações padrões
                             "social_type" => [ // Tipo de proponente (Pessoa Fisica ou Pessoa Jurídica) Pessoa Fisica = 1 Pessoa Jurídica = 2
@@ -512,7 +542,7 @@ return [
             "namespace" => "AbstractValidator",
             "config" => [
                 "is_opportunity_managed_handler" => function ($opportunity) {
-                    $opportunityList =  ['820', '821', '822', '823', '825', '826', '827', '840', '841', '842', '843'];
+                    $opportunityList =  ['820', '821', '822', '823', '825', '826', '827', '840', '841', '842', '843', '1120'];
                     return in_array($opportunity->id, $opportunityList) ? true : false;
                 },
             ]
@@ -539,7 +569,7 @@ return [
                 'slug' => 'financial_validator',
                 'name' => 'Validador Financeiro',
                 'is_opportunity_managed_handler' => function ($opportunity) {
-                    $opportunityList =  ['820', '821', '822', '823', '825', '826', '827', '840', '841', '842', '843'];
+                    $opportunityList =  ['820', '821', '822', '823', '825', '826', '827', '840', '841', '842', '843', '1120'];
                     return in_array($opportunity->id, $opportunityList) ? true : false;
                 },
             ]
