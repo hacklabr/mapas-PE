@@ -22,7 +22,7 @@ return [
                     'numero_inscricao' => '13.270.478/0001-83',
                     'agencia' => '697',
                     'agencia_dv' => '1',
-                    'conta' => '78949',
+                    'conta' => '79849',
                     'conta_dv' => '5',
                     'numero_sequencial_arquivo' => 1,
                     'convenio' => '000264470',
