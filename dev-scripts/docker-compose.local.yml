@@ -30,6 +30,7 @@ services:
       - ../plugins/GenericValidator:/var/www/html/protected/application/plugins/GenericValidator
       - ../plugins/FinancialValidador:/var/www/html/protected/application/plugins/FinancialValidador
       - ../plugins/SubsiteImporter:/var/www/html/protected/application/plugins/SubsiteImporter
+      - ../plugins/Analytics:/var/www/html/protected/application/plugins/Analytics
       - ../plugins/SettingsPe:/var/www/html/protected/application/plugins/SettingsPe
       - ../plugins/CadUnico:/var/www/html/protected/application/plugins/CadUnico
       - ../plugins/ClaimForm:/var/www/html/protected/application/plugins/ClaimForm
