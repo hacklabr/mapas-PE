@@ -52,3 +52,6 @@
 [submodule "plugins/ValuersManagement"]
 	path = plugins/ValuersManagement
 	url = https://github.com/mapasculturais/plugin-ValuersManagement
+[submodule "plugins/Analytics"]
+	path = plugins/Analytics
+	url = https://github.com/mapasculturais/plugin-Analytics.git
