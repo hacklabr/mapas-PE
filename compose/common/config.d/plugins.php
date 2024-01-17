@@ -3,6 +3,10 @@
 return [
     'plugins' => [
         'ValuersManagement' => ['namespace' => 'ValuersManagement'],
+        'Analytics' => [
+            'namespace' => 'Analytics',
+            'config' => ['analytics_key'=> 'G-H3SYGEF1JW'],
+        ],
 
         'EvaluationMethodTechnical' => ['namespace' => 'EvaluationMethodTechnical', 'config' => ['step' => 0.1]],
         'EvaluationMethodSimple' => ['namespace' => 'EvaluationMethodSimple'],
