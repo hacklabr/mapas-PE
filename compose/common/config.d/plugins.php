@@ -19,7 +19,7 @@ return [
             'namespace' => 'RegistrationPayments',
             'config' => [
                 'cnab240_enabled' => true, // Habilita ou Desabilita exportação do CNAB240
-                'opportunitys_cnab_active' => ['820', '821', '822', '823', '825', '826', '827', '840', '841', '842', '843', '1120', '1131'],
+                'opportunitys_cnab_active' => ['820', '821', '822', '823', '825', '826', '827', '840', '841', '842', '843', '1120', '1131', '1146', '1147'],
                 'cnab240_company_data' => [
                     'nome_empresa' => 'SECRETARIA DE CULTURA PE',
                     'tipo_inscricao' => '2',
@@ -36,6 +36,70 @@ return [
                     'operacao' => 'C',
                 ],
                 "opportunitysCnab" => [ // Configurações de oportunidades
+                    "1147" => [
+                        "canab_bb_default_value" => 1, // Define qual valor padão representa o Banco do Brasil
+                        "settings" => [ // Configurações padrões
+                            "social_type" => [ // Tipo de proponente (Pessoa Fisica ou Pessoa Jurídica) Pessoa Fisica = 1 Pessoa Jurídica = 2
+                                "MESTRES E MESTRAS  - PESSOA FÍSICA" => "1",  // Não utilizado neste edital, por isso id repetido
+                                "GRUPOS, COLETIVOS, POVOS E COMUNIDADES TRADICIONAIS – SEM CONSTITUIÇÃO JURÍDICA REPRESENTADO POR PESSOA FÍSICA" => "1",  // Não utilizado neste edital, por isso id repetido
+                                "GRUPOS, COLETIVOS, POVOS E COMUNIDADES TRADICIONAIS - PESSOA JURÍDICA (INCLUINDO MEI)" => "2",
+                                "MESTRES E MESTRAS  - PESSOA JURÍDICA (INCLUINDO MEI)" => "2",
+                            ],
+                            "release_type" => [
+                                1 => "01", // Corrente BB
+                                2 => "05", // Poupança BB
+                                3 => "03", // Outros bancos
+                            ],
+                        ],
+                        "social_type" => 'category', // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "category",
+                            1 => 25327, // Não utilizado neste edital, por isso id repetido
+                            2 => 25342,
+                        ],
+                        "proponent_document" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "category",
+                            1 => 25330,  // Não utilizado neste edital, por isso id repetido
+                            2 => 25315,
+                        ],
+                        "account_type" => 28026, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 28025, // ID campo que define a o banco do proponente
+                        "branch" => 28028, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 28029, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 28030, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 28031, // ID campo que define o DV da conta bancária do proponente
+                    ],
+                    "1146" => [
+                        "canab_bb_default_value" => 1, // Define qual valor padão representa o Banco do Brasil
+                        "settings" => [ // Configurações padrões
+                            "social_type" => [ // Tipo de proponente (Pessoa Fisica ou Pessoa Jurídica) Pessoa Fisica = 1 Pessoa Jurídica = 2
+                                "Pessoa Física" => "1",  // Não utilizado neste edital, por isso id repetido
+                                "Pessoa Jurídica (Exclusivamente MEI)" => "2",
+                            ],
+                            "release_type" => [
+                                1 => "01", // Corrente BB
+                                2 => "05", // Poupança BB
+                                3 => "03", // Outros bancos
+                            ],
+                        ],
+                        "social_type" => 'category', // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "category",
+                            1 => 26186, // Não utilizado neste edital, por isso id repetido
+                            2 => 26196,
+                        ],
+                        "proponent_document" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "category",
+                            1 => 26190,  // Não utilizado neste edital, por isso id repetido
+                            2 => 26198,
+                        ],
+                        "account_type" => 28015, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 28013, // ID campo que define a o banco do proponente
+                        "branch" => 28016, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 28017, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 28018, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 28019, // ID campo que define o DV da conta bancária do proponente
+                    ],
                     "1131" => [
                         "canab_bb_default_value" => 1, // Define qual valor padão representa o Banco do Brasil
                         "settings" => [ // Configurações padrões
@@ -588,7 +652,7 @@ return [
             "namespace" => "AbstractValidator",
             "config" => [
                 "is_opportunity_managed_handler" => function ($opportunity) {
-                    $opportunityList =  ['820', '821', '822', '823', '825', '826', '827', '840', '841', '842', '843', '1120', '1131'];
+                    $opportunityList =  ['820', '821', '822', '823', '825', '826', '827', '840', '841', '842', '843', '1120', '1131', '1146', '1147'];
                     return in_array($opportunity->id, $opportunityList) ? true : false;
                 },
             ]
@@ -615,7 +679,7 @@ return [
                 'slug' => 'financial_validator',
                 'name' => 'Validador Financeiro',
                 'is_opportunity_managed_handler' => function ($opportunity) {
-                    $opportunityList =  ['820', '821', '822', '823', '825', '826', '827', '840', '841', '842', '843', '1120', '1131'];
+                    $opportunityList =  ['820', '821', '822', '823', '825', '826', '827', '840', '841', '842', '843', '1120', '1131', '1146','1147'];
                     return in_array($opportunity->id, $opportunityList) ? true : false;
                 },
             ]
