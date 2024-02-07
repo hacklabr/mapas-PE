@@ -3,6 +3,7 @@ use MApasCulturais\Entities;
 
 return [
     'plugins' => [
+        'AdminLoginAsUser' => ['namespace' => 'AdminLoginAsUser'],
         'FormCommunication' => [
             'namespace' => "FormCommunication",
             'config' => ['sendEmailTo' => 'contato.mapacultural@secult.pe.gov.br']
