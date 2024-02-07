@@ -3,6 +3,7 @@
 return [
     'plugins' => [
         'MultipleLocalAuth',
-        'MapasBlame'
+        'MapasBlame',
+        'AdminLoginAsUser'
     ]
 ];
