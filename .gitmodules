@@ -19,3 +19,6 @@
 [submodule "themes/MapasMuseus"]
 	path = themes/MapasMuseus
 	url = https://github.com/mapasculturais/theme-Museus
+[submodule "plugins/AdminLoginAsUser"]
+	path = plugins/AdminLoginAsUser
+	url = https://github.com/mapasculturais/plugin-AdminLoginAsUser.git
