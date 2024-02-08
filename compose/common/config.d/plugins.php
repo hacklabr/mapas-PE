@@ -62,7 +62,7 @@ return [
                             1 => 25330,  // Não utilizado neste edital, por isso id repetido
                             2 => 25315,
                         ],
-                        "account_type" => 28026, // ID campo que define o tipo de conta bancária do proponente
+                        "account_type" => 28027, // ID campo que define o tipo de conta bancária do proponente
                         "bank" => 28025, // ID campo que define a o banco do proponente
                         "branch" => 28028, // ID campo que define a agência bancária do proponente
                         "branch_dv" => 28029, // ID campo que define o DV da agência bancária do proponente
