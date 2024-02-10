@@ -22,3 +22,6 @@
 [submodule "plugins/AdminLoginAsUser"]
 	path = plugins/AdminLoginAsUser
 	url = https://github.com/mapasculturais/plugin-AdminLoginAsUser.git
+[submodule "plugins/RegistrationPayments"]
+	path = plugins/RegistrationPayments
+	url = https://github.com/mapasculturais/plugin-RegistrationPayments.git
