@@ -4,6 +4,8 @@ return [
     'plugins' => [
         'MultipleLocalAuth',
         'MapasBlame',
-        'AdminLoginAsUser'
+        'AdminLoginAsUser',
+        'SettingsPe',
+        'RegistrationPayments',
     ]
 ];

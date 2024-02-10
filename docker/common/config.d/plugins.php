@@ -3,6 +3,7 @@ use MApasCulturais\Entities;
 
 return [
     'plugins' => [
+        'RegistrationPayments' => ['RegistrationPayments' => 'RegistrationPayments'],
         'AdminLoginAsUser' => ['namespace' => 'AdminLoginAsUser'],
         'FormCommunication' => [
             'namespace' => "FormCommunication",

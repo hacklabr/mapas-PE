@@ -28,7 +28,7 @@ services:
       - ../plugins/MultipleLocalAuth:/var/www/src/plugins/MultipleLocalAuth
       - ../plugins/SettingsPe:/var/www/src/plugins/SettingsPe
       - ../plugins/AdminLoginAsUser:/var/www/src/plugins/AdminLoginAsUser
-      # - ../plugins/FormCommunication:/var/www/src/plugins/FormCommunication
+      - ../plugins/RegistrationPayments:/var/www/src/plugins/RegistrationPayments
       
       - ../docker/common/conf-base-museus.php:/var/www/src/themes/MapasMuseus/conf-base.php
 
