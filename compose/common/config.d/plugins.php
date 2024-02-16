@@ -54,7 +54,7 @@ return [
                         "social_type" => 'category', // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
                         "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
                             "dependence" => "category",
-                            1 => 25327, // Não utilizado neste edital, por isso id repetido
+                            1 => 25328, // Não utilizado neste edital, por isso id repetido
                             2 => 25342,
                         ],
                         "proponent_document" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
