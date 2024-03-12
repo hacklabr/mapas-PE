@@ -34,6 +34,7 @@ services:
       - ../plugins/SettingsPe:/var/www/html/protected/application/plugins/SettingsPe
       - ../plugins/CadUnico:/var/www/html/protected/application/plugins/CadUnico
       - ../plugins/ClaimForm:/var/www/html/protected/application/plugins/ClaimForm
+      - ../plugins/RegistrationPayments:/var/www/html/protected/application/plugins/RegistrationPayments
 
 
 
