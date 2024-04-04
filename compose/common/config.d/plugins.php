@@ -37,6 +37,10 @@ return [
                 ],
                 "opportunitysCnab" => [ // Configurações de oportunidades
                     "1175" => [
+                        'company_data' => [
+                            'conta' => '79848', 
+                            'conta_dv' => 7, 
+                        ],
                         "canab_bb_default_value" => '1', // Define qual valor padão representa o Banco do Brasil
                         "settings" => [ // Configurações padrões
                             "social_type" => [ // Tipo de proponente (Pessoa Fisica ou Pessoa Jurídica) Pessoa Fisica = 1 Pessoa Jurídica = 2
@@ -107,6 +111,10 @@ return [
                         "account_dv" => 28564, // ID campo que define o DV da conta bancária do proponente
                     ],
                     "1177" => [
+                        'company_data' => [
+                            'conta' => '79848', 
+                            'conta_dv' => 7, 
+                        ],
                         "canab_bb_default_value" => 1, // Define qual valor padão representa o Banco do Brasil
                         "settings" => [ // Configurações padrões
                             "social_type" => [ // Tipo de proponente (Pessoa Fisica ou Pessoa Jurídica) Pessoa Fisica = 1 Pessoa Jurídica = 2
@@ -212,6 +220,10 @@ return [
                         "account_dv" => 28585, // ID campo que define o DV da conta bancária do proponente
                     ],
                     "1180" => [
+                        'company_data' => [
+                            'conta' => '79848', 
+                            'conta_dv' => 7, 
+                        ],
                         "canab_bb_default_value" => 1, // Define qual valor padão representa o Banco do Brasil
                         "settings" => [ // Configurações padrões
                             "social_type" => [ // Tipo de proponente (Pessoa Fisica ou Pessoa Jurídica) Pessoa Fisica = 1 Pessoa Jurídica = 2
@@ -527,6 +539,10 @@ return [
                         "account_dv" => 28648, // ID campo que define o DV da conta bancária do proponente
                     ],
                     "1189" => [
+                        'company_data' => [
+                            'conta' => '79848', 
+                            'conta_dv' => 7, 
+                        ],
                         "canab_bb_default_value" => 1, // Define qual valor padão representa o Banco do Brasil
                         "settings" => [ // Configurações padrões
                             "social_type" => [ // Tipo de proponente (Pessoa Fisica ou Pessoa Jurídica) Pessoa Fisica = 1 Pessoa Jurídica = 2
@@ -581,12 +597,12 @@ return [
                         "social_type" => 28658, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
                         "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
                             "dependence" => "social_type",
-                            1 => 28147,
+                            1 => 28144,
                             2 => 28152,
                         ],
                         "proponent_document" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
                             "dependence" => "social_type",
-                            1 => 28180, 
+                            1 => 28147, 
                             2 => 28153,
                         ],
                         "account_type" => 28788, // ID campo que define o tipo de conta bancária do proponente
