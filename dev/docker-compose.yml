@@ -12,9 +12,9 @@ services:
       - ./docker/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
  
       # dados
-      - ../docker-data/assets:/var/www/html/assets
-      - ../docker-data/public-files:/var/www/html/files
-      - ../docker-data/private-files:/var/www/private-files
+      - ./docker-data/assets:/var/www/html/assets
+      - ./docker-data/public-files:/var/www/html/files
+      - ./docker-data/private-files:/var/www/private-files
 
       # configurações
       - ../docker/common/config.d:/var/www/config/common.d
@@ -105,4 +105,4 @@ services:
       - "5432:5432"
     volumes:
       - ./db/:/docker-entrypoint-initdb.d/
-      - ../docker-data/db-data:/var/lib/postgresql/data
+      - ./docker-data/db-data:/var/lib/postgresql/data
