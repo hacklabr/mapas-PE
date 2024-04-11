@@ -5,7 +5,6 @@ return [
         'ValuersManagement' => ['namespace' => 'ValuersManagement'],
         'Analytics' => [
             'namespace' => 'Analytics',
-            'config' => ['analytics_key'=> ''],
         ],
 
         'EvaluationMethodTechnical' => ['namespace' => 'EvaluationMethodTechnical', 'config' => ['step' => 0.1]],
