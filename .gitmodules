@@ -28,3 +28,6 @@
 [submodule "plugins/CreateGeoDivisions"]
 	path = plugins/CreateGeoDivisions
 	url = https://github.com/mapasculturais/plugin-CreateGeoDivisions.git
+[submodule "plugins/Analytics"]
+	path = plugins/Analytics
+	url = https://github.com/mapasculturais/plugin-Analytics.git
