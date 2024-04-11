@@ -8,6 +8,7 @@ on:
     - "master"
     - "develop"
     - "basev2"
+    - "v7.0"
 
 jobs:
   docker:
