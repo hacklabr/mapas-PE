@@ -32,4 +32,12 @@ return [
         'password'       => env('DB_PASS', 'mapas'),
         'server_version' => env('DB_VERSION', 10),
     ],
+    'app.geoDivisionsHierarchy' => [
+        'pais'              => ['name' => i::__('País'),            'showLayer' => true],
+        'estado'            => ['name' => i::__('Estado'),          'showLayer' => true],
+        'mesorregiao'       => ['name' => i::__('Mesorregião'),     'showLayer' => true],
+        'RD'  => ['name' => i::__('Região de desenvolvimento'),'showLayer' => true],
+        'microrregiao'      => ['name' => i::__('Microrregião'),    'showLayer' => true],
+        'municipio'         => ['name' => i::__('Município'),       'showLayer' => true],
+    ]
 ];
