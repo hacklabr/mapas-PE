@@ -3,6 +3,7 @@ use MApasCulturais\Entities;
 
 return [
     'plugins' => [
+        'CreateGeoDivisions',
         'RegistrationPayments' => ['namespace' => 'RegistrationPayments'],
         'AdminLoginAsUser' => ['namespace' => 'AdminLoginAsUser'],
         'FormCommunication' => [

@@ -25,3 +25,6 @@
 [submodule "plugins/RegistrationPayments"]
 	path = plugins/RegistrationPayments
 	url = https://github.com/mapasculturais/plugin-RegistrationPayments.git
+[submodule "plugins/CreateGeoDivisions"]
+	path = plugins/CreateGeoDivisions
+	url = https://github.com/mapasculturais/plugin-CreateGeoDivisions.git
