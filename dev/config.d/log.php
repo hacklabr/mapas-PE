@@ -23,7 +23,7 @@ return [
     ex: 'file:WARNING,error_log:DEBUG,browser:DEBUG'
     ex: [new \Monolog\Handler\ErrorLogHandler(level: Level::Debug)]
     */
-    'monolog.handlers' => env('LOG_HANDLERS', 'error_log,browser'),
+    'monolog.handlers' => env('LOG_HANDLERS', 'file:WARNING,error_log:DEBUG'),
 
     'monolog.processors' => [],
 
@@ -34,22 +34,22 @@ return [
      */
     'monolog.logsDir'          => env('LOG_DIR', VAR_PATH . 'logs/'),
 
-    // 'app.log.query' => true,
-    // 'app.log.hook' => true,
-    // 'app.log.requestData' => true,
-    // 'app.log.texts' => true,
-    // 'app.log.translations' => true,
-    // 'app.log.apiCache' => true,
-    // 'app.log.apiDql' => true,
-    // 'app.log.assets' => true,
-    // 'app.log.auth' => true,
+    'app.log.query'         => env('LOG_QUERY', false),
+    'app.log.hook'          => env('LOG_HOOK', false),
+    'app.log.requestData'   => env('LOG_REQUESTDATA', false),
+    'app.log.texts'         => env('LOG_TEXTS', false),
+    'app.log.translations'  => env('LOG_TRANSLATIONS', false),
+    'app.log.apiCache'      => env('LOG_APICACHE', false),
+    'app.log.apiDql'        => env('LOG_APIDQL', false),
+    'app.log.assets'        => env('LOG_ASSETS', false),
+    'app.log.auth'          => env('LOG_AUTH', false),
 
-    // 'app.log.components' => true,
-    // 'app.log.assetManager' => true,
+    'app.log.components'          => env('LOG_COMPONENTS', false),
+    'app.log.assetManager'        => env('LOG_ASSETMANAGER', false),
     
-    // 'app.log.jobs' => true,
-    // 'app.log.pcache' => true,
-    // 'app.log.pcache.users' => true,
+    'app.log.jobs'          => env('LOG_JOBS', false),
+    'app.log.pcache'        => env('LOG_PCACHE', false),
+    'app.log.pcache.users'  => env('LOG_PCACHE_USERS', false),
 
     'app.queryLogger' => env('LOG_QUERYLOG_CLASS', null)
 

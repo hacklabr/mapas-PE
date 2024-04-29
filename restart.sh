@@ -2,4 +2,4 @@
 
 ENV=$(cat environment)
 
-docker-compose -f docker-compose.$ENV.yml restart
+docker compose -f docker-compose.$ENV.yml restart

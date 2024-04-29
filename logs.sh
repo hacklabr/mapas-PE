@@ -2,4 +2,4 @@
 
 ENV=$(cat environment)
 
-docker-compose -f docker-compose.$ENV.yml logs -f --tail=10
+docker compose -f docker-compose.$ENV.yml logs -f --tail=10

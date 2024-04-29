@@ -2,4 +2,4 @@
 
 ENV=$(cat environment)
 
-docker-compose -f docker-compose.$ENV.yml down
+docker compose -f docker-compose.$ENV.yml down

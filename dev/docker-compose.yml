@@ -4,94 +4,51 @@ services:
     build:
       context: ../
       dockerfile: docker/Dockerfile
+      
     command: /var/www/dev/start.sh
+
     ports:
       - "80:80"
+    
     volumes:
-      - ./docker/php.ini:/usr/local/etc/php/php.ini
-      - ./docker/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
- 
-      # dados
       - ./docker-data/assets:/var/www/html/assets
       - ./docker-data/public-files:/var/www/html/files
-      - ./docker-data/private-files:/var/www/private-files
+      - ./docker-data/private-files:/var/www/var/private-files
+      - ./docker-data/logs:/var/www/var/logs
 
-      # configurações
       - ../docker/common/config.d:/var/www/config/common.d
-      - ../docker/common/lgpd-terms:/var/www/config/lgpd-terms
-      - ./config.d:/var/www/config/config.d
-  
+      - ./config.d:/var/www/config/local.d
+
       # themes and plugins
       - ../themes/MapasPE:/var/www/src/themes/MapasPE
+      - ../plugins/MultipleLocalAuth:/var/www/src/plugins/MultipleLocalAuth
       - ../themes/MapasMuseus:/var/www/src/themes/MapasMuseus
       - ../plugins/MapasBlame:/var/www/src/plugins/MapasBlame
-      - ../plugins/MultipleLocalAuth:/var/www/src/plugins/MultipleLocalAuth
       - ../plugins/SettingsPe:/var/www/src/plugins/SettingsPe
       - ../plugins/AdminLoginAsUser:/var/www/src/plugins/AdminLoginAsUser
       - ../plugins/RegistrationPayments:/var/www/src/plugins/RegistrationPayments
       
       - ../docker/common/conf-base-museus.php:/var/www/src/themes/MapasMuseus/conf-base.php
 
-
-      # overrides
-      #  - ../docker/overrides/mapas/conf/registrations.php 
-      #  - ../docker/overrides/mapas/conf/notification-types.php 
-      #  - ../docker/overrides/mapas/conf/taxonomies.php 
-      #  - ../docker/overrides/mapas/modules/CompliantSuggestion/ng.modules.compliantSuggestion.js 
-      #  - ../docker/overrides/mapas/modules/ProfileCompletion/profile-complete-message.php 
-      #  - ../docker/overrides/mapas/modules/Reports/registrationsDraftVsSent.php 
-
-
-    links:
-      - db
-      - redis
-      - sessions
-      
     environment:
-      - MC_UPDATES_PROCESSES=8
-      - BUILD_ASSETS=0
-      - PENDING_PCACHE_RECREATION_INTERVAL=1
-      # - JOBS_INTERVAL=1
+      - PENDING_PCACHE_RECREATION_INTERVAL=10
+      - JOBS_INTERVAL=10
       - REDIS_CACHE=redis
-      - MAILER_TRANSPORT=smtp://mailhog:1025
-      - MAILER_FROM=sysadmin@localhost
-      
-      # chaves de teste do google recaptcha
-      - GOOGLE_RECAPTCHA_SITEKEY=6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI
-      - GOOGLE_RECAPTCHA_SECRET=6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe
-
-      - DISPLAY_ERROR_DETAIL=true
-      - LOG_ERRORS=true
-      - LOG_ERROR_DETAIL=true
-
-      - SESSIONS_SAVE_PATH=tcp://sessions:6379
-
-      - DOMAIN_MAPAS=localhost
-      - DOMAIN_MUSEUS=museus.localhost
+      - APP_MODE=development
+      - BUILD_ASSETS=1
 
     depends_on:
       - db
       - redis
-      - sessions
       - mailhog
+  
     stdin_open: true
     tty: true
-    
-  mailhog: 
-    image: mailhog/mailhog
-    ports:
-      - "8025:8025"
+
 
   redis:
     image: redis:6
-    command: --maxmemory 256Mb --maxmemory-policy allkeys-lru  
-
-  sessions:
-    image: redis:6
-    restart: unless-stopped
-    command: --maxmemory 128Mb --maxmemory-policy allkeys-lru
-    volumes:
-      - ./docker-data/sessions:/data
+    command: --maxmemory 256Mb --maxmemory-policy allkeys-lru
 
   db:
     image: postgis/postgis:14-master
@@ -99,10 +56,13 @@ services:
       - POSTGRES_PASSWORD=mapas
       - POSTGRES_USER=mapas
       - POSTGRES_DB=mapas
-      
-
     ports:
       - "5432:5432"
     volumes:
-      - ./db/:/docker-entrypoint-initdb.d/
+      - ../docker/db:/docker-entrypoint-initdb.d
       - ./docker-data/db-data:/var/lib/postgresql/data
+
+  mailhog: 
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"
