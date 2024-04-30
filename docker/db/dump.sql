@@ -2,13 +2,8 @@
 -- PostgreSQL database dump
 --
 
-<<<<<<<< HEAD:dev/db/dump.sql
--- Dumped from database version 11.2 (Debian 11.2-1.pgdg90+1)
--- Dumped by pg_dump version 11.2 (Debian 11.2-1.pgdg90+1)
-========
 -- Dumped from database version 14.8 (Debian 14.8-1.pgdg110+1)
 -- Dumped by pg_dump version 14.8 (Debian 14.8-1.pgdg110+1)
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -26,8 +21,6 @@ SET row_security = off;
 --
 
 CREATE SCHEMA tiger;
-<<<<<<<< HEAD:dev/db/dump.sql
-========
 
 
 ALTER SCHEMA tiger OWNER TO mapas;
@@ -55,42 +48,10 @@ ALTER SCHEMA topology OWNER TO mapas;
 --
 
 COMMENT ON SCHEMA topology IS 'PostGIS Topology schema';
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
-
-
-ALTER SCHEMA tiger OWNER TO mapas;
-
---
-<<<<<<<< HEAD:dev/db/dump.sql
--- Name: tiger_data; Type: SCHEMA; Schema: -; Owner: mapas
---
-
-CREATE SCHEMA tiger_data;
-
-
-ALTER SCHEMA tiger_data OWNER TO mapas;
-
---
--- Name: topology; Type: SCHEMA; Schema: -; Owner: mapas
---
-
-CREATE SCHEMA topology;
-
-
-ALTER SCHEMA topology OWNER TO mapas;
-
---
--- Name: SCHEMA topology; Type: COMMENT; Schema: -; Owner: mapas
---
-
-COMMENT ON SCHEMA topology IS 'PostGIS Topology schema';
 
 
 --
--- Name: fuzzystrmatch; Type: EXTENSION; Schema: -; Owner: 
-========
 -- Name: fuzzystrmatch; Type: EXTENSION; Schema: -; Owner: -
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
 --
 
 CREATE EXTENSION IF NOT EXISTS fuzzystrmatch WITH SCHEMA public;
@@ -175,32 +136,22 @@ ALTER DOMAIN public.frequency OWNER TO mapas;
 
 CREATE TYPE public.object_type AS ENUM (
     'MapasCulturais\Entities\Agent',
-<<<<<<<< HEAD:dev/db/dump.sql
-========
     'MapasCulturais\Entities\ChatMessage',
     'MapasCulturais\Entities\ChatThread',
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
     'MapasCulturais\Entities\EvaluationMethodConfiguration',
     'MapasCulturais\Entities\Event',
     'MapasCulturais\Entities\Notification',
     'MapasCulturais\Entities\Opportunity',
     'MapasCulturais\Entities\Project',
     'MapasCulturais\Entities\Registration',
-<<<<<<<< HEAD:dev/db/dump.sql
-========
     'MapasCulturais\Entities\RegistrationEvaluation',
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
     'MapasCulturais\Entities\RegistrationFileConfiguration',
     'MapasCulturais\Entities\Request',
     'MapasCulturais\Entities\Seal',
     'MapasCulturais\Entities\Space',
-<<<<<<<< HEAD:dev/db/dump.sql
-    'MapasCulturais\Entities\Subsite'
-========
     'MapasCulturais\Entities\Subsite',
     'MapasCulturais\Entities\User',
     'UserManagement\Entities\SystemRole'
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
 );
 
 
@@ -228,10 +179,7 @@ CREATE TYPE public.permission_action AS ENUM (
     'modify',
     'modifyRegistrationFields',
     'modifyValuers',
-<<<<<<<< HEAD:dev/db/dump.sql
-========
     'post',
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
     'publish',
     'publishRegistrations',
     'register',
@@ -252,9 +200,6 @@ CREATE TYPE public.permission_action AS ENUM (
     'viewPrivateData',
     'viewPrivateFiles',
     'viewRegistrations',
-<<<<<<<< HEAD:dev/db/dump.sql
-    'viewUserEvaluation'
-========
     'viewUserEvaluation',
     'changeType',
     'changeUserProfile',
@@ -262,15 +207,12 @@ CREATE TYPE public.permission_action AS ENUM (
     'evaluateOnTime',
     'unarchive',
     'changePassword'
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
 );
 
 
 ALTER TYPE public.permission_action OWNER TO mapas;
 
 --
-<<<<<<<< HEAD:dev/db/dump.sql
-========
 -- Name: CAST (point AS text); Type: CAST; Schema: -; Owner: -
 --
 
@@ -278,7 +220,6 @@ ALTER TYPE public.permission_action OWNER TO mapas;
 
 
 --
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
 -- Name: days_in_month(date); Type: FUNCTION; Schema: public; Owner: mapas
 --
 
@@ -1210,13 +1151,9 @@ CREATE TABLE public.registration_evaluation (
     user_id integer NOT NULL,
     result character varying(255) DEFAULT NULL::character varying,
     evaluation_data text NOT NULL,
-<<<<<<<< HEAD:dev/db/dump.sql
-    status smallint
-========
     status smallint,
     create_timestamp timestamp without time zone DEFAULT now() NOT NULL,
     update_timestamp timestamp without time zone
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
 );
 
 
@@ -1267,10 +1204,7 @@ COMMENT ON COLUMN public.usr.auth_provider IS '1=openid';
 
 CREATE VIEW public.evaluations AS
  SELECT evaluations_view.registration_id,
-<<<<<<<< HEAD:dev/db/dump.sql
-========
     evaluations_view.registration_sent_timestamp,
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
     evaluations_view.registration_number,
     evaluations_view.registration_category,
     evaluations_view.registration_agent_id,
@@ -1281,10 +1215,7 @@ CREATE VIEW public.evaluations AS
     max((evaluations_view.evaluation_result)::text) AS evaluation_result,
     max(evaluations_view.evaluation_status) AS evaluation_status
    FROM ( SELECT r.id AS registration_id,
-<<<<<<<< HEAD:dev/db/dump.sql
-========
             r.sent_timestamp AS registration_sent_timestamp,
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
             r.number AS registration_number,
             r.category AS registration_category,
             r.agent_id AS registration_agent_id,
@@ -1300,10 +1231,7 @@ CREATE VIEW public.evaluations AS
           WHERE (r.status > 0)
         UNION
          SELECT r2.id AS registration_id,
-<<<<<<<< HEAD:dev/db/dump.sql
-========
             r2.sent_timestamp AS registration_sent_timestamp,
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
             r2.number AS registration_number,
             r2.category AS registration_category,
             r2.agent_id AS registration_agent_id,
@@ -1313,24 +1241,12 @@ CREATE VIEW public.evaluations AS
             NULL::integer AS evaluation_id,
             NULL::character varying AS evaluation_result,
             NULL::smallint AS evaluation_status
-<<<<<<<< HEAD:dev/db/dump.sql
-           FROM ((public.registration r2
-             JOIN public.pcache p2 ON ((r2.id = p2.object_id)))
-             JOIN public.usr u2 ON ((u2.id = p2.user_id)))
-          WHERE ((p2.object_type = 'MapasCulturais\Entities\Registration'::public.object_type) AND (p2.action = 'evaluate'::public.permission_action) AND (r2.status > 0) AND (p2.user_id IN ( SELECT agent.user_id
-                   FROM public.agent
-                  WHERE (agent.id IN ( SELECT agent_relation.agent_id
-                           FROM public.agent_relation
-                          WHERE ((agent_relation.object_type = 'MapasCulturais\Entities\EvaluationMethodConfiguration'::public.object_type) AND (agent_relation.object_id = r2.opportunity_id)))))))) evaluations_view
-  GROUP BY evaluations_view.registration_id, evaluations_view.registration_number, evaluations_view.registration_category, evaluations_view.registration_agent_id, evaluations_view.valuer_user_id, evaluations_view.valuer_agent_id, evaluations_view.opportunity_id;
-========
            FROM (((public.registration r2
              JOIN public.pcache p2 ON (((p2.object_id = r2.id) AND (p2.object_type = 'MapasCulturais\Entities\Registration'::public.object_type) AND (p2.action = 'evaluateOnTime'::public.permission_action))))
              JOIN public.usr u2 ON ((u2.id = p2.user_id)))
              JOIN public.evaluation_method_configuration emc ON ((emc.opportunity_id = r2.opportunity_id)))
           WHERE (r2.status > 0)) evaluations_view
   GROUP BY evaluations_view.registration_id, evaluations_view.registration_sent_timestamp, evaluations_view.registration_number, evaluations_view.registration_category, evaluations_view.registration_agent_id, evaluations_view.valuer_user_id, evaluations_view.valuer_agent_id, evaluations_view.opportunity_id;
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
 
 
 ALTER TABLE public.evaluations OWNER TO mapas;
@@ -2031,14 +1947,10 @@ CREATE TABLE public.registration_field_configuration (
     field_options text NOT NULL,
     max_size text,
     display_order smallint DEFAULT 255,
-<<<<<<<< HEAD:dev/db/dump.sql
-    config text
-========
     config text,
     conditional boolean,
     conditional_field character varying(255),
     conditional_value character varying(255)
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
 );
 
 
@@ -2921,21 +2833,6 @@ create entities updated revision	2019-03-07 23:54:19.362878
 fix update timestamp of revisioned entities	2019-03-07 23:54:19.367904
 consolidate registration result	2019-03-07 23:54:19.3728
 create avatar thumbs	2019-03-07 23:55:16.963658
-<<<<<<<< HEAD:dev/db/dump.sql
-CREATE SEQUENCE REGISTRATION SPACE RELATION registration_space_relation_id_seq	2021-02-04 13:50:37.698794
-CREATE TABLE spacerelation	2021-02-04 13:50:37.698794
-ALTER TABLE registration	2021-02-04 13:50:37.698794
-create event attendance table	2021-02-04 13:50:37.698794
-create procuration table	2021-02-04 13:50:37.698794
-alter table registration_field_configuration add column config	2021-02-04 13:50:37.698794
-recreate ALL FKs	2021-02-04 13:50:37.698794
-create object_type enum type	2021-02-04 13:50:37.698794
-create permission_action enum type	2021-02-04 13:50:37.698794
-alter tables to use enum types	2021-02-04 13:50:37.698794
-alter table permission_cache_pending add column status	2021-02-04 13:50:37.698794
-CREATE VIEW evaluation	2021-02-04 13:50:37.698794
-valuer disabling refactor	2021-02-04 13:50:37.698794
-========
 CREATE SEQUENCE REGISTRATION SPACE RELATION registration_space_relation_id_seq	2022-12-28 15:18:39.104279
 CREATE TABLE spacerelation	2022-12-28 15:18:39.104279
 ALTER TABLE registration	2022-12-28 15:18:39.104279
@@ -2996,7 +2893,6 @@ Atualiza os campos das ocorrencias para o novo padrao	2023-09-16 18:51:35.644497
 create permission cache for users	2023-09-16 18:51:35.648676
 Atualiza campos condicionados para funcionar na nova estrutura	2023-09-16 18:51:35.653105
 criando fases de resultado final para as oportunidades existentes sem fase final	2023-09-16 18:51:35.657056
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
 \.
 
 
@@ -3249,11 +3145,7 @@ COPY public.registration_evaluation (id, registration_id, user_id, result, evalu
 -- Data for Name: registration_field_configuration; Type: TABLE DATA; Schema: public; Owner: mapas
 --
 
-<<<<<<<< HEAD:dev/db/dump.sql
-COPY public.registration_field_configuration (id, opportunity_id, title, description, categories, required, field_type, field_options, max_size, display_order, config) FROM stdin;
-========
 COPY public.registration_field_configuration (id, opportunity_id, title, description, categories, required, field_type, field_options, max_size, display_order, config, conditional, conditional_field, conditional_value) FROM stdin;
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
 \.
 
 
@@ -4891,11 +4783,6 @@ CREATE INDEX user_meta_owner_key_idx ON public.user_meta USING btree (object_id,
 
 
 --
-<<<<<<<< HEAD:dev/db/dump.sql
--- Name: usr fk_1762498cccfa12b8; Type: FK CONSTRAINT; Schema: public; Owner: mapas
---
-
-========
 -- Name: agent trigger_clean_orphans_agent; Type: TRIGGER; Schema: public; Owner: mapas
 --
 
@@ -4983,7 +4870,6 @@ CREATE TRIGGER trigger_clean_orphans_subsite AFTER DELETE ON public.subsite FOR 
 -- Name: usr fk_1762498cccfa12b8; Type: FK CONSTRAINT; Schema: public; Owner: mapas
 --
 
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
 ALTER TABLE ONLY public.usr
     ADD CONSTRAINT fk_1762498cccfa12b8 FOREIGN KEY (profile_id) REFERENCES public.agent(id) ON DELETE SET NULL;
 
@@ -5509,8 +5395,6 @@ ALTER TABLE ONLY public.project_meta
 
 
 --
-<<<<<<<< HEAD:dev/db/dump.sql
-========
 -- Name: chat_message fk_fab3fc16727aca70; Type: FK CONSTRAINT; Schema: public; Owner: mapas
 --
 
@@ -5535,7 +5419,5 @@ ALTER TABLE ONLY public.chat_message
 
 
 --
->>>>>>>> e14d809571b375c8c51df8f12b4120102c0b1924:docker/db/dump.sql
 -- PostgreSQL database dump complete
 --
-
