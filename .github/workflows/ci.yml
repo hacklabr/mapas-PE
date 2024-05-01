@@ -9,6 +9,7 @@ on:
     - "develop"
     - "basev2"
     - "v7.0"
+    - "v7.4"
 
 jobs:
   docker:
