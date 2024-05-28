@@ -49,6 +49,9 @@ class Plugin extends \MapasCulturais\Plugin
 
     public function register()
     {
+        $app = App::i();
+        $app->registerController('pesettings', Controller::class);
+
         $this->registerTaxonomies();
 
         $this->registerAgentMetadata("CPC", [
