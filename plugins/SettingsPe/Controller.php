@@ -25,7 +25,7 @@ class Controller extends \MapasCulturais\Controllers\EntityController
             return;
         }
 
-        $save = isset($this->data['save']) : true : false;
+        $save = isset($this->data['save']) ? true : false;
         $error = [];
         $success = [];
         $path_file = __DIR__ . '/config/copy-bank-data.php';
