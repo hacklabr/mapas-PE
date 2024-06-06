@@ -4,7 +4,7 @@
     <?php foreach ($config['home-banners'] as $banner) : ?>
         <div style="margin-bottom: 1em; margin-top: 1em;">
             <a href="<?=$banner['url']?>">
-                <img src="<?= $this->asset($banner['image'], false) ?>" alt="<?= $banner['alt'] ?>">
+                <img src="<?= $this->asset($banner['image'], false) ?>" alt="<?= $banner['alt'] ?>" style="width: 80%;">
             </a>
         </div>
     <?php endforeach ?>
