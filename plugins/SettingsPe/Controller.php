@@ -53,12 +53,12 @@ class Controller extends \MapasCulturais\Controllers\EntityController
                                     $field_name_from = "field_{$from}";
                                     $field_name_to = "field_{$to}";
 
-                                    if ($reg_from->$field_name_from && $reg_from->$field_name_from != "") {
+                                    if ($reg_from->$field_name_from && $reg_from->$field_name_from != "" || is_numeric($reg_from->$field_name_from) || $reg_from->$field_name_from === 0) {
                                         $reg_to->$field_name_to = $reg_from->$field_name_from;
                                         $_val = str_pad($reg_from->$field_name_from, 20, ' ');
                                         $success[] = "{$_val} do campo de ID: {$from} da fase de origem {$opp_from}, foi copiado para fase de destino {$opp_to} no campo de ID {$to} na inscrição {$registration}";
                                     } else {
-                                        $error[] = "O campo de ID: {$from} não esta preenchido na fase de origem ID: {$opp_from}}";
+                                        $error[] = "Durante a cópia dados da inscrição {$registration} verificamos que -- O campo de ID: {$from} não esta preenchido na fase de origem ID: {$opp_from}";
                                     }
                                 }
 
