@@ -75,6 +75,31 @@ services:
     volumes:
       - ./docker/db:/docker-entrypoint-initdb.d
       - ./docker-data/db-data:/var/lib/postgresql/data
+
+  metabase:
+    image: metabase/metabase
+    environment:
+      - MB_DB_TYPE=postgres 
+      - MB_DB_DBNAME=metabase 
+      - MB_DB_PORT=5432 
+      - MB_DB_USER=metabase 
+      - MB_DB_PASS=metabase 
+      - MB_DB_HOST=db_metabase 
+    ports:
+      - "3000:3000"
+  
+    depends_on:
+      - db_metabase
+      
+  db_metabase:
+    image: postgres:14
+    environment:
+      - POSTGRES_PASSWORD=metabase
+      - POSTGRES_USER=metabase
+      - POSTGRES_DB=metabase
+    volumes:
+      # - ./compose/db/metabase.sql.gz:/docker-entrypoint-initdb.d/dump.sql.gz
+      - ./docker-data/metabase-data-20230417:/var/lib/postgresql/data
     
 
 ## Em ambiente de homologação pode ser uma boa ideia utilizar o mailhog para testar 
