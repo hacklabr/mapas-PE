@@ -12,6 +12,7 @@ services:
       - ./docker/production/nginx-ssl.conf:/etc/nginx/conf.d/default.conf
       - ./docker-data/certs/conf:/etc/letsencrypt
       - ./docker-data/certs/www:/var/www/certbot
+      - ./em-breve:/var/www/html/em-breve
     ports:
      - "80:80"
      - "443:443"
