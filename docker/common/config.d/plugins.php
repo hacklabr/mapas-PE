@@ -24,6 +24,15 @@ return [
                     'situacao_arquivo' => " ",
                     'uso_bb1' => '000264470',
                     'operacao' => 'C',
+                    "social_type" => [
+                        "Pessoa Física" => "1",  
+                        "Pessoa Jurídica" => "2",
+                    ],
+                    "default_lot_type" => [
+                        '01' => 'Conta corrente',
+                        '05' => 'Conta poupança',
+                    ],
+                    "canab_bb_default_value" => '1',
                 ],
                 "opportunitysCnab" => [ // Configurações de oportunidades
                     "1143" => [
