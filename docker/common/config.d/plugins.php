@@ -23,18 +23,23 @@ return [
                     'carteira' => '',
                     'situacao_arquivo' => " ",
                     'uso_bb1' => '000264470',
-                    'operacao' => 'C',
+                    'operacao' => 'C'
+                ],
+                "opportunitysCnab" => [ // Configurações de oportunidades
+                    "release_type" => [
+                        1 => "01", // Corrente BB
+                        2 => "05", // Poupança BB
+                        3 => "03", // Outros bancos
+                    ],
                     "social_type" => [
                         "Pessoa Física" => "1",  
                         "Pessoa Jurídica" => "2",
                     ],
                     "default_lot_type" => [
-                        '01' => 'Conta corrente',
-                        '05' => 'Conta poupança',
+                        '01' => 1,
+                        '05' => 2,
                     ],
                     "canab_bb_default_value" => '1',
-                ],
-                "opportunitysCnab" => [ // Configurações de oportunidades
                     "1143" => [
                         'company_data' => [
                             'conta' => '79848', 
