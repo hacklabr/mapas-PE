@@ -1152,7 +1152,7 @@ return [
                 ]
             )
         ],
-        // 'MapasBlame' => ['namespace' => 'MapasBlame'],
+        'MapasBlame' => ['namespace' => 'MapasBlame'],
         'SettingsPe' => ['namespace' => "SettingsPe"],
         'ClaimForm' => ['namespace' => 'ClaimForm'],
         // 'CadUnico' => [
