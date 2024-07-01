@@ -1,6 +1,7 @@
 <?php
 $routes = $config['routes'];
 
-$routes["shortcuts"]['metabase'] = ["metabase", "panel"];
+$routes["shortcuts"]['paineis-de-dados'] = ["metabase", "panel"];
+$routes["shortcuts"]['painel-de-dados'] = ["metabase", "dashboard"];
 
 return ['routes' => $routes];
