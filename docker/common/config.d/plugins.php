@@ -9,7 +9,7 @@ return [
             'namespace' => 'RegistrationPayments',
             'config' => [
                 'cnab240_enabled' => true, // Habilita ou Desabilita exportação do CNAB240
-                'opportunitys_cnab_active' => ['820', '821', '822', '823', '825', '826', '827', '840', '841', '842', '843', '1120', '1131', '1146', '1147', '1175', '1176', '1177', '1178', '1179', '1180', '1181', '1182', '1183', '1184', '1185', '1186', '1187', '1188', '1189', '1190'],
+                'opportunitys_cnab_active' => ['820', '821', '822', '823', '825', '826', '827', '840', '841', '842', '843', '1120', '1131', '1146', '1147', '1175', '1176', '1177', '1160', '1179', '1180', '1181', '1182', '1183', '1184', '1185', '1186', '1187', '1188', '1189', '1190'],
                 'cnab240_company_data' => [
                     'nome_empresa' => 'SECRETARIA DE CULTURA PE',
                     'tipo_inscricao' => '2',
@@ -170,7 +170,7 @@ return [
                                 '05' => 'Conta poupança',
                             ]
                         ],
-                        "social_type" => 28574, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "social_type" => 28185, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
                         "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
                             "dependence" => "social_type",
                             1 => 28177, // Não utilizado neste edital, por isso id repetido
@@ -181,12 +181,12 @@ return [
                             1 => 28179,  // Não utilizado neste edital, por isso id repetido
                             2 => 28179,
                         ],
-                        "account_type" => 28776, // ID campo que define o tipo de conta bancária do proponente
-                        "bank" => 28573, // ID campo que define a o banco do proponente
-                        "branch" => 28575, // ID campo que define a agência bancária do proponente
-                        "branch_dv" => 28576, // ID campo que define o DV da agência bancária do proponente
-                        "account" => 28577, // ID campo que define a conta bancária do proponente
-                        "account_dv" => 28578, // ID campo que define o DV da conta bancária do proponente
+                        "account_type" => 28186, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 28183, // ID campo que define a o banco do proponente
+                        "branch" => 28187, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 28188, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 28189, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 28190, // ID campo que define o DV da conta bancária do proponente
                     ],
                     "1950" => [
                         "canab_bb_default_value" => 1, // Define qual valor padão representa o Banco do Brasil
@@ -419,7 +419,7 @@ return [
                                 '05' => 'Conta poupança',
                             ]
                         ],
-                        "social_type" => 28623, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "social_type" => 28306, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
                         "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
                             "dependence" => "social_type",
                             1 => 28300,
@@ -430,12 +430,12 @@ return [
                             1 => 28301, 
                             2 => 28303,
                         ],
-                        "account_type" => 28783, // ID campo que define o tipo de conta bancária do proponente
-                        "bank" => 28622, // ID campo que define a o banco do proponente
-                        "branch" => 28624, // ID campo que define a agência bancária do proponente
-                        "branch_dv" => 28625, // ID campo que define o DV da agência bancária do proponente
-                        "account" => 28626, // ID campo que define a conta bancária do proponente
-                        "account_dv" => 28627, // ID campo que define o DV da conta bancária do proponente
+                        "account_type" => 28307, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 28305, // ID campo que define a o banco do proponente
+                        "branch" => 28308, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 28309, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 28310, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 28311, // ID campo que define o DV da conta bancária do proponente
                     ],
                     "1959" => [
                         "canab_bb_default_value" => 1, // Define qual valor padão representa o Banco do Brasil
