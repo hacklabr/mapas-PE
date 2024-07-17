@@ -34,23 +34,23 @@ return [
                 'app_id' => env('AUTH_TWITTER_APP_ID', null),
                 'app_secret' => env('AUTH_TWITTER_APP_SECRET', null),
             ),
-            'govbr' => array(
-                'visible' => env('AUTH_GOV_BR_ID', true),
-                'response_type' => 'code',
-                'client_id' => 'aldirblanchomolog.mapacultural.pe.gov.br',
-                'client_secret' => '5da4a129-1143-451f-864c-cb99f7b3f5d4',
-                'scope' => 'openid email profile govbr_confiabilidades phone',
-                'redirect_uri' => 'https://www.aldirblanchomolog.mapacultural.pe.gov.br/autenticacao/govbr/oauth2callback',
-                'auth_endpoint' => 'https://sso.staging.acesso.gov.br/authorize',
-                'token_endpoint' => 'https://sso.staging.acesso.gov.br/token',
-                'nonce' => 'abc',
-                'code_verifier' => 'Ub0hCVGslVjxaME539ljWBvvTLmK6DWsUHplOIc8Ci8Ub0hCVGslVjxaME539ljWBvvTLmK6DWsUHplOIc8Ci8',
-                'code_challenge' => 'xiB-jB0zqoOm18PZx1K4H1mp5E_Yl5EW1KQ3qGS40F8',
-                'code_challenge_method' => 'S256',
-                'userinfo_endpoint' => 'https://sso.staging.acesso.gov.br/jwk',
-                'state_salt' => "mapaspe",
-                'applySealId' => 17,
-                'menssagem_authenticated' => "",
+            'govbr' => [
+                'visible' => env('AUTH_GOV_BR_ID', false),
+                'response_type' => env('AUTH_GOV_BR_RESPONSE_TYPE', 'code'),
+                'client_id' => env('AUTH_GOV_BR_CLIENT_ID', null),
+                'client_secret' => env('AUTH_GOV_BR_SECRET', null),
+                'scope' => env('AUTH_GOV_BR_SCOPE', null),
+                'redirect_uri' => env('AUTH_GOV_BR_REDIRECT_URI', null), 
+                'auth_endpoint' => env('AUTH_GOV_BR_ENDPOINT', null),
+                'token_endpoint' => env('AUTH_GOV_BR_TOKEN_ENDPOINT', null),
+                'nonce' => env('AUTH_GOV_BR_NONCE', null),
+                'code_verifier' => env('AUTH_GOV_BR_CODE_VERIFIER', null),
+                'code_challenge' => env('AUTH_GOV_BR_CHALLENGE', null),
+                'code_challenge_method' => env('AUTH_GOV_BR_CHALLENGE_METHOD', null),
+                'userinfo_endpoint' => env('AUTH_GOV_BR_USERINFO_ENDPOINT', null),
+                'state_salt' => env('AUTH_GOV_BR_STATE_SALT', null),
+                'applySealId' => env('AUTH_GOV_BR_APPLY_SEAL_ID', null),
+                'menssagem_authenticated' => env('AUTH_GOV_BR_MENSSAGEM_AUTHENTICATED','Usuário já se autenticou pelo GovBr'),
                 'dic_agent_fields_update' => [
                     'nomeCompleto' => 'full_name',
                     'name' => 'name',
@@ -59,7 +59,7 @@ return [
                     'emailPrivado' => 'email',
                     'telefone1' => 'phone_number',
                 ]
-            )
+            ]
 
         ]
     ),
