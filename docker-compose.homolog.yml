@@ -9,6 +9,9 @@ services:
       - ./docker-data/public-files:/var/www/html/files
       - ./docker-data/assets:/var/www/html/assets
       - ./docker/production/nginx-homolog.conf:/etc/nginx/conf.d/default.conf
+
+      # Caso exista senha para acesso http do homolog descomentar essa linha
+      # - ./docker/production/.htpasswd:/etc/nginx/.htpasswd
  
     ports:
      - "80:80"
