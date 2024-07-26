@@ -5,6 +5,7 @@ return [
     'plugins' => [
         'CreateGeoDivisions',
         'Analytics',
+        'Accessibility',
         'RegistrationPayments' => [
             'namespace' => 'RegistrationPayments',
             'config' => [
