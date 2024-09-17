@@ -68,3 +68,6 @@ $home-register: #9C4EC7;
         background: linear-gradient(97.05deg, $primary-300 32%, $secondary-300 113%), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     }
 }
+.home-header__banner{
+    max-width: size(700);
+}
