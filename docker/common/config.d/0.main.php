@@ -23,7 +23,6 @@ return [
     'app.lcode' => 'pt_BR',
     'homeHeader.banner' => 'img/censo-banner.jpg',
     'homeHeader.bannerLink' => 'https://www.mapacultural.pe.gov.br/projeto/2883/#info',
-    'homeHeader.downloadableLink' => true,
     
     'base.assetUrl' => $base_url . 'assets/',
     'base.url' => $base_url,
