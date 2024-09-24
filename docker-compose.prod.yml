@@ -34,12 +34,13 @@ services:
       - ./docker-data/saas-files:/var/www/var/saas-files
       - ./docker-data/sessions:/var/www/var/sessions
       - ./docker-data/logs:/var/www/var/logs
+      - ./em-breve:/var/www/html/em-breve
 
       - ./docker/common/config.d:/var/www/config/common.d
       - ./docker/production/config.d:/var/www/config/config.d
       - ./docker/common/lgpd-terms:/var/www/config/lgpd-terms
     links:
-      - db
+      # - db
       - redis
       - sessions
     environment:
@@ -47,7 +48,7 @@ services:
       - SESSIONS_SAVE_PATH=tcp://sessions:6379
 
     depends_on:
-      - db
+      # - db
       - redis
       - sessions
 
@@ -63,16 +64,16 @@ services:
     volumes:
       - ./docker-data/sessions:/data
 
-  db:
-    image: postgis/postgis:16-master
-    restart: unless-stopped
-    environment:
-      - POSTGRES_PASSWORD=mapas
-      - POSTGRES_USER=mapas
-      - POSTGRES_DB=mapas
-    volumes:
-      - ./docker/db:/docker-entrypoint-initdb.d
-      - ./docker-data/db-data:/var/lib/postgresql/data
+  # db:
+  #   image: postgis/postgis:16-master
+  #   restart: unless-stopped
+  #   environment:
+  #     - POSTGRES_PASSWORD=mapas
+  #     - POSTGRES_USER=mapas
+  #     - POSTGRES_DB=mapas
+  #   volumes:
+  #     - ./docker/db:/docker-entrypoint-initdb.d
+  #     - ./docker-data/db-data:/var/lib/postgresql/data
 
   metabase:
     image: metabase/metabase

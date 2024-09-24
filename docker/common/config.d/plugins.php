@@ -3,6 +3,7 @@ use MApasCulturais\Entities;
 
 return [
     'plugins' => [
+        'SpamDetector',
         'CreateGeoDivisions',
         'Analytics',
         'Accessibility',
@@ -41,7 +42,7 @@ return [
                         '05' => 2,
                     ],
                     "canab_bb_default_value" => '1',
-                    "1143" => [
+                    "1943" => [
                         'company_data' => [
                             'conta' => '79848', 
                             'conta_dv' => 7, 
@@ -62,7 +63,7 @@ return [
                                 '05' => 'Conta poupança',
                             ]
                         ],
-                        "social_type" => 28553, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "social_type" => 28132, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
                         "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
                             "dependence" => "social_type",
                             1 => 28126, // Não utilizado neste edital, por isso id repetido
@@ -73,12 +74,12 @@ return [
                             1 => 28127,  // Não utilizado neste edital, por isso id repetido
                             2 => 28129,
                         ],
-                        "account_type" => 28773, // ID campo que define o tipo de conta bancária do proponente
-                        "bank" => 28552, // ID campo que define a o banco do proponente
-                        "branch" => 28554, // ID campo que define a agência bancária do proponente
-                        "branch_dv" => 28555, // ID campo que define o DV da agência bancária do proponente
-                        "account" => 28556, // ID campo que define a conta bancária do proponente
-                        "account_dv" => 28557, // ID campo que define o DV da conta bancária do proponente
+                        "account_type" => 28133, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 28131, // ID campo que define a o banco do proponente
+                        "branch" => 28134, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 28135, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 28136, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 28137, // ID campo que define o DV da conta bancária do proponente
                     ],
                     "1144" => [
                         "canab_bb_default_value" => 1, // Define qual valor padão representa o Banco do Brasil
@@ -136,7 +137,7 @@ return [
                                 '05' => 'Conta poupança',
                             ]
                         ],
-                        "social_type" => 28567, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "social_type" => 28168, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
                         "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
                             "dependence" => "social_type",
                             1 => 28155,
@@ -147,12 +148,12 @@ return [
                             1 => 28156, 
                             2 => 28159,
                         ],
-                        "account_type" => 28775, // ID campo que define o tipo de conta bancária do proponente
-                        "bank" => 28566, // ID campo que define a o banco do proponente
-                        "branch" => 28568, // ID campo que define a agência bancária do proponente
-                        "branch_dv" => 28569, // ID campo que define o DV da agência bancária do proponente
-                        "account" => 28570, // ID campo que define a conta bancária do proponente
-                        "account_dv" => 28571, // ID campo que define o DV da conta bancária do proponente
+                        "account_type" => 28170, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 28166, // ID campo que define a o banco do proponente
+                        "branch" => 28171, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 28172, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 28173, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 28174, // ID campo que define o DV da conta bancária do proponente
                     ],
                     "1949" => [
                         "canab_bb_default_value" => 1, // Define qual valor padão representa o Banco do Brasil
@@ -280,7 +281,7 @@ return [
                                 '05' => 'Conta poupança',
                             ]
                         ],
-                        "social_type" => 28595, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "social_type" => 28230, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
                         "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
                             "dependence" => "social_type",
                             1 => 28221,
@@ -291,12 +292,12 @@ return [
                             1 => 28224, 
                             2 => 28227,
                         ],
-                        "account_type" => 28779, // ID campo que define o tipo de conta bancária do proponente
-                        "bank" => 28594, // ID campo que define a o banco do proponente
-                        "branch" => 28596, // ID campo que define a agência bancária do proponente
-                        "branch_dv" => 28597, // ID campo que define o DV da agência bancária do proponente
-                        "account" => 28598, // ID campo que define a conta bancária do proponente
-                        "account_dv" => 28599, // ID campo que define o DV da conta bancária do proponente
+                        "account_type" => 28231, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 28229, // ID campo que define a o banco do proponente
+                        "branch" => 28232, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 28233, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 28234, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 28235, // ID campo que define o DV da conta bancária do proponente
                     ],
                     "1955" => [
                         "canab_bb_default_value" => 1, // Define qual valor padão representa o Banco do Brasil
@@ -315,7 +316,7 @@ return [
                                 '05' => 'Conta poupança',
                             ]
                         ],
-                        "social_type" => 28602, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "social_type" => 28258, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
                         "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
                             "dependence" => "social_type",
                             1 => 28240,
@@ -326,12 +327,12 @@ return [
                             1 => 28241, 
                             2 => 28245,
                         ],
-                        "account_type" => 28780, // ID campo que define o tipo de conta bancária do proponente
-                        "bank" => 28601, // ID campo que define a o banco do proponente
-                        "branch" => 28603, // ID campo que define a agência bancária do proponente
-                        "branch_dv" => 28604, // ID campo que define o DV da agência bancária do proponente
-                        "account" => 28605, // ID campo que define a conta bancária do proponente
-                        "account_dv" => 28606, // ID campo que define o DV da conta bancária do proponente
+                        "account_type" => 28260, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 28256, // ID campo que define a o banco do proponente
+                        "branch" => 28261, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 28264, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 28265, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 28266, // ID campo que define o DV da conta bancária do proponente
                     ],
                     "1956" => [
                         "canab_bb_default_value" => 1, // Define qual valor padão representa o Banco do Brasil
@@ -385,7 +386,7 @@ return [
                                 '05' => 'Conta poupança',
                             ]
                         ],
-                        "social_type" => 28616, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "social_type" => 28319, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
                         "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
                             "dependence" => "social_type",
                             1 => 28313,
@@ -396,12 +397,12 @@ return [
                             1 => 28314, 
                             2 => 28316,
                         ],
-                        "account_type" => 28782, // ID campo que define o tipo de conta bancária do proponente
-                        "bank" => 28615, // ID campo que define a o banco do proponente
-                        "branch" => 28617, // ID campo que define a agência bancária do proponente
-                        "branch_dv" => 28618, // ID campo que define o DV da agência bancária do proponente
-                        "account" => 28619, // ID campo que define a conta bancária do proponente
-                        "account_dv" => 28620, // ID campo que define o DV da conta bancária do proponente
+                        "account_type" => 28320, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 28318, // ID campo que define a o banco do proponente
+                        "branch" => 28321, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 28322, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 28323, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 28324, // ID campo que define o DV da conta bancária do proponente
                     ],
                     "1958" => [
                         "canab_bb_default_value" => 1, // Define qual valor padão representa o Banco do Brasil
@@ -599,7 +600,7 @@ return [
                                 '05' => 'Conta poupança',
                             ]
                         ],
-                        "social_type" => 28658, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "social_type" => 28161, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
                         "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
                             "dependence" => "social_type",
                             1 => 28144,
@@ -610,12 +611,12 @@ return [
                             1 => 28147, 
                             2 => 28153,
                         ],
-                        "account_type" => 28788, // ID campo que define o tipo de conta bancária do proponente
-                        "bank" => 28657, // ID campo que define a o banco do proponente
-                        "branch" => 28659, // ID campo que define a agência bancária do proponente
-                        "branch_dv" => 28660, // ID campo que define o DV da agência bancária do proponente
-                        "account" => 28661, // ID campo que define a conta bancária do proponente
-                        "account_dv" => 28662, // ID campo que define o DV da conta bancária do proponente
+                        "account_type" => 28162, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 28160, // ID campo que define a o banco do proponente
+                        "branch" => 28163, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 28164, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 28167, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 28169, // ID campo que define o DV da conta bancária do proponente
                     ],
                     "1945" => [
                         "canab_bb_default_value" => 1, // Define qual valor padão representa o Banco do Brasil
@@ -1177,161 +1178,161 @@ return [
         //     ]
         // ],
 
-        'Metabase' => [
-            'namespace' => 'Metabase',
-            'config' => [
-                'links' => [
-                    'opportunities' => [
-                        'title' => 'Painel sobre oportunidades',
-                        'link' => 'https://bi.mapacultural.pe.gov.br/public/dashboard/39ce65ee-9d2b-432e-b9d2-e688b18ece7d',
-                        'text' => 'Tenha acesso ao número de oportunidades e  editais cadastrados, a quantidade de pessoas participantes inscritas, o perfil demográfico e mais informações.',
-                    ],
-                    'users' => [
-                        'title' => 'Painel sobre usuários',
-                        'link' => 'https://bi.mapacultural.pe.gov.br/public/dashboard/44f04f96-70aa-4fb6-bcc6-6ec06c72d8e8',
-                        'text' => 'Acesse e confira os dados gerais dos usuários da plataforma, como o total de pessoas cadastradas, atividades dos usuários e outras informações. ',
+        // 'Metabase' => [
+        //     'namespace' => 'Metabase',
+        //     'config' => [
+        //         'links' => [
+        //             'opportunities' => [
+        //                 'title' => 'Painel sobre oportunidades',
+        //                 'link' => 'https://bi.mapacultural.pe.gov.br/public/dashboard/39ce65ee-9d2b-432e-b9d2-e688b18ece7d',
+        //                 'text' => 'Tenha acesso ao número de oportunidades e  editais cadastrados, a quantidade de pessoas participantes inscritas, o perfil demográfico e mais informações.',
+        //             ],
+        //             'users' => [
+        //                 'title' => 'Painel sobre usuários',
+        //                 'link' => 'https://bi.mapacultural.pe.gov.br/public/dashboard/44f04f96-70aa-4fb6-bcc6-6ec06c72d8e8',
+        //                 'text' => 'Acesse e confira os dados gerais dos usuários da plataforma, como o total de pessoas cadastradas, atividades dos usuários e outras informações. ',
 
-                    ],
-                    'entities' => [
-                        'title' => 'Painel geral das entidades ',
-                        'link' => 'https://bi.mapacultural.pe.gov.br/public/dashboard/b0d48d8e-d5c2-4a7b-a56f-207c0caa77bc',
-                        'text' => 'Confira dados relacionados às entidades cadastradas na plataforma, como agentes individuais e coletivos, oportunidades, espaços, eventos e projetos.',
-                    ],
-                    'agent1' => [
-                        'title' => 'Painel sobre agentes individuais',
-                        'link' => 'https://bi.mapacultural.pe.gov.br/public/dashboard/dbf9eb35-9304-49a5-9c63-646687bdde41',
-                        'text' => 'Saiba os números de agentes individuais cadastrados, quantos são criados mensalmente, por onde estão distribuídos no território e outras informações.',
-                    ],
-                    'agent2' => [
-                        'title' => 'Painel sobre agentes coletivos',
-                        'link' => 'https://bi.mapacultural.pe.gov.br/public/dashboard/3b01b14a-d1e4-4e42-bb83-220352704e26',
-                        'text' => 'Dados sobre a quantidade de  coletivos e instituições (com ou sem CNPJ) cadastrados, por onde se distribuem pelo estado e outras informações.',
-                    ],
+        //             ],
+        //             'entities' => [
+        //                 'title' => 'Painel geral das entidades ',
+        //                 'link' => 'https://bi.mapacultural.pe.gov.br/public/dashboard/b0d48d8e-d5c2-4a7b-a56f-207c0caa77bc',
+        //                 'text' => 'Confira dados relacionados às entidades cadastradas na plataforma, como agentes individuais e coletivos, oportunidades, espaços, eventos e projetos.',
+        //             ],
+        //             'agent1' => [
+        //                 'title' => 'Painel sobre agentes individuais',
+        //                 'link' => 'https://bi.mapacultural.pe.gov.br/public/dashboard/dbf9eb35-9304-49a5-9c63-646687bdde41',
+        //                 'text' => 'Saiba os números de agentes individuais cadastrados, quantos são criados mensalmente, por onde estão distribuídos no território e outras informações.',
+        //             ],
+        //             'agent2' => [
+        //                 'title' => 'Painel sobre agentes coletivos',
+        //                 'link' => 'https://bi.mapacultural.pe.gov.br/public/dashboard/3b01b14a-d1e4-4e42-bb83-220352704e26',
+        //                 'text' => 'Dados sobre a quantidade de  coletivos e instituições (com ou sem CNPJ) cadastrados, por onde se distribuem pelo estado e outras informações.',
+        //             ],
 
-                    'spaces' => [
-                        'title' => 'Painel sobre espaços',
-                        'link' => 'https://bi.mapacultural.pe.gov.br/public/dashboard/7eb10b1d-43f3-4adf-aabc-fa46bdd0073a',
-                        'text' => 'Conheça, entre outras informações, por onde os espaços estão distribuídos, a quantidade de espaços cadastros na plataforma, os tipos e as áreas de atuação.',
-                    ],
-                    'events' => [
-                        'title' => 'Painel sobre eventos',
-                        'link' => 'https://bi.mapacultural.pe.gov.br/public/dashboard/1bfdba17-1340-4ca9-9bc6-ab7dde8c8503',
-                        'text' => 'Indicadores relacionados a quantidade de eventos cadastrados, às linguagens culturais e características, as datas de criação e também eventos agendados. ',
-                    ],
-                    'projects' => [
-                        'title' => 'Painel sobre projetos',
-                        'link' => 'https://bi.mapacultural.pe.gov.br/public/dashboard/3107052a-bdda-4113-b635-6d7e4a1df10b',
-                        'text' => 'Tenha acesso ao número total de projetos cadastrados, projetos certificados, quantidade de projetos com subprojetos, os tipos e outros dados. ',
-                    ],
-                ],
-                'cards' =>[
-                    [
-                        'label' => 'Oportunidade',
-                        'icon' => 'opportunity',
-                        'iconClass' => 'opportunity__color',
-                        'panelLink' => 'opportunities',
-                        'data' => [
-                            [
-                                'label' => 'oportunidades criadas',
-                                'entity' => Entities\Opportunity::class,
-                                'query' => [],
-                            ],
-                            [
-                                'label' => 'oportunidades certificadas',
-                                'entity' => Entities\Opportunity::class,
-                                'query' => [
-                                    '@verified' => 1,
-                                ],
-                            ],
-                        ],
-                    ],
-                    [
-                        'label' => 'Agentes coletivos',
-                        'icon' => 'agent-2',
-                        'iconClass' => 'agent__color',
-                        'panelLink' => 'agent2',
-                        'data' => [
-                            [
-                                'label' => 'coletivos cadastrados',
-                                'entity' => Entities\Agent::class,
-                                'query' => [
-                                    'type' => 'EQ(2)',
-                                ],
-                            ],
-                            [
-                                'label' => 'coletivos certificados',
-                                'entity' => Entities\Agent::class,
-                                'query' => [
-                                    'type' => 'EQ(2)',
-                                    '@verified' => 1,
-                                ],
-                            ],
-                        ],
-                    ],
-                    [
-                        'label' => 'Agentes individuais',
-                        'icon' => 'agent-1',
-                        'iconClass' => 'agent__color',
-                        'panelLink' => 'agent1',
-                        'data' => [
-                            [
-                                'label' => 'agentes individuais cadastrados',
-                                'entity' => Entities\Agent::class,
-                                'query' => [
-                                    'type' => 'EQ(1)'
-                                ],
-                            ],
-                        ],
-                    ],
-                    [
-                        'label' => 'Espaços',
-                        'icon' => 'space',
-                        'iconClass' => 'space__color',
-                        'panelLink' => 'spaces',
-                        'data' => [
-                            [
-                                'label' => 'espaços cadastrados',
-                                'entity' => Entities\Space::class,
-                                'query' => [],
-                            ],
-                            [
-                                'label' => 'espaços certificados',
-                                'entity' => Entities\Space::class,
-                                'query' => [
-                                    '@verified' => 1
-                                ],
-                            ],
-                        ],
-                    ],
-                    [
-                        'label' => 'Projetos',
-                        'icon' => 'project',
-                        'iconClass' => 'project__color',
-                        'panelLink' => 'projects',
-                        'data' => [
-                            [
-                                'label' => 'projetos cadastrados',
-                                'entity' => Entities\Project::class,
-                                'query' => [],
-                            ],
-                        ],
-                    ],
-                    [
-                        'label' => 'Eventos',
-                        'icon' => 'event',
-                        'iconClass' => 'event__color',
-                        'panelLink' => 'events',
-                        'data' => [
-                            [
-                                'label' => 'eventos cadastrados',
-                                'entity' => Entities\Event::class,
-                                'query' => [],
-                            ],
-                        ],
-                    ],
+        //             'spaces' => [
+        //                 'title' => 'Painel sobre espaços',
+        //                 'link' => 'https://bi.mapacultural.pe.gov.br/public/dashboard/7eb10b1d-43f3-4adf-aabc-fa46bdd0073a',
+        //                 'text' => 'Conheça, entre outras informações, por onde os espaços estão distribuídos, a quantidade de espaços cadastros na plataforma, os tipos e as áreas de atuação.',
+        //             ],
+        //             'events' => [
+        //                 'title' => 'Painel sobre eventos',
+        //                 'link' => 'https://bi.mapacultural.pe.gov.br/public/dashboard/1bfdba17-1340-4ca9-9bc6-ab7dde8c8503',
+        //                 'text' => 'Indicadores relacionados a quantidade de eventos cadastrados, às linguagens culturais e características, as datas de criação e também eventos agendados. ',
+        //             ],
+        //             'projects' => [
+        //                 'title' => 'Painel sobre projetos',
+        //                 'link' => 'https://bi.mapacultural.pe.gov.br/public/dashboard/3107052a-bdda-4113-b635-6d7e4a1df10b',
+        //                 'text' => 'Tenha acesso ao número total de projetos cadastrados, projetos certificados, quantidade de projetos com subprojetos, os tipos e outros dados. ',
+        //             ],
+        //         ],
+        //         'cards' =>[
+        //             [
+        //                 'label' => 'Oportunidade',
+        //                 'icon' => 'opportunity',
+        //                 'iconClass' => 'opportunity__color',
+        //                 'panelLink' => 'opportunities',
+        //                 'data' => [
+        //                     [
+        //                         'label' => 'oportunidades criadas',
+        //                         'entity' => Entities\Opportunity::class,
+        //                         'query' => [],
+        //                     ],
+        //                     [
+        //                         'label' => 'oportunidades certificadas',
+        //                         'entity' => Entities\Opportunity::class,
+        //                         'query' => [
+        //                             '@verified' => 1,
+        //                         ],
+        //                     ],
+        //                 ],
+        //             ],
+        //             [
+        //                 'label' => 'Agentes coletivos',
+        //                 'icon' => 'agent-2',
+        //                 'iconClass' => 'agent__color',
+        //                 'panelLink' => 'agent2',
+        //                 'data' => [
+        //                     [
+        //                         'label' => 'coletivos cadastrados',
+        //                         'entity' => Entities\Agent::class,
+        //                         'query' => [
+        //                             'type' => 'EQ(2)',
+        //                         ],
+        //                     ],
+        //                     [
+        //                         'label' => 'coletivos certificados',
+        //                         'entity' => Entities\Agent::class,
+        //                         'query' => [
+        //                             'type' => 'EQ(2)',
+        //                             '@verified' => 1,
+        //                         ],
+        //                     ],
+        //                 ],
+        //             ],
+        //             [
+        //                 'label' => 'Agentes individuais',
+        //                 'icon' => 'agent-1',
+        //                 'iconClass' => 'agent__color',
+        //                 'panelLink' => 'agent1',
+        //                 'data' => [
+        //                     [
+        //                         'label' => 'agentes individuais cadastrados',
+        //                         'entity' => Entities\Agent::class,
+        //                         'query' => [
+        //                             'type' => 'EQ(1)'
+        //                         ],
+        //                     ],
+        //                 ],
+        //             ],
+        //             [
+        //                 'label' => 'Espaços',
+        //                 'icon' => 'space',
+        //                 'iconClass' => 'space__color',
+        //                 'panelLink' => 'spaces',
+        //                 'data' => [
+        //                     [
+        //                         'label' => 'espaços cadastrados',
+        //                         'entity' => Entities\Space::class,
+        //                         'query' => [],
+        //                     ],
+        //                     [
+        //                         'label' => 'espaços certificados',
+        //                         'entity' => Entities\Space::class,
+        //                         'query' => [
+        //                             '@verified' => 1
+        //                         ],
+        //                     ],
+        //                 ],
+        //             ],
+        //             [
+        //                 'label' => 'Projetos',
+        //                 'icon' => 'project',
+        //                 'iconClass' => 'project__color',
+        //                 'panelLink' => 'projects',
+        //                 'data' => [
+        //                     [
+        //                         'label' => 'projetos cadastrados',
+        //                         'entity' => Entities\Project::class,
+        //                         'query' => [],
+        //                     ],
+        //                 ],
+        //             ],
+        //             [
+        //                 'label' => 'Eventos',
+        //                 'icon' => 'event',
+        //                 'iconClass' => 'event__color',
+        //                 'panelLink' => 'events',
+        //                 'data' => [
+        //                     [
+        //                         'label' => 'eventos cadastrados',
+        //                         'entity' => Entities\Event::class,
+        //                         'query' => [],
+        //                     ],
+        //                 ],
+        //             ],
                 
-                ],
-            ],
-        ]
+        //         ],
+        //     ],
+        // ]
     ]
 ];

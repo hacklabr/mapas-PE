@@ -21,7 +21,7 @@ return [
     'themes.active' => 'MapasPE',
 
     'app.lcode' => 'pt_BR',
-
+     
     'base.assetUrl' => $base_url . 'assets/',
     'base.url' => $base_url,
 
