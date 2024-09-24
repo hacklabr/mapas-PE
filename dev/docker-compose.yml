@@ -28,6 +28,7 @@ services:
       - ../plugins/AdminLoginAsUser:/var/www/src/plugins/AdminLoginAsUser
       - ../plugins/RegistrationPayments:/var/www/src/plugins/RegistrationPayments
       - ../plugins/Metabase:/var/www/src/plugins/Metabase
+      - ../plugins/Accessibility:/var/www/src/plugins/Accessibility
       - ../em-breve:/var/www/html/em-breve
       
       - ../docker/common/conf-base-museus.php:/var/www/src/themes/MapasMuseus/conf-base.php
@@ -65,7 +66,7 @@ services:
       - "5432:5432"
     volumes:
       - ../docker/db:/docker-entrypoint-initdb.d
-      - ./docker-data/db-data:/var/lib/postgresql/data
+      - ~/erlei/docker-data/dump-2023-04-09--1535-OK:/var/lib/postgresql/data
 
   mailhog: 
     image: mailhog/mailhog
