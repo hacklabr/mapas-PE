@@ -1,4 +1,4 @@
-FROM hacklab/mapasculturais:7.4.18
+FROM hacklab/mapasculturais:7.4.20
 
 COPY themes /var/www/src/themes
 COPY plugins /var/www/src/plugins
