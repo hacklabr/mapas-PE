@@ -29,6 +29,7 @@ services:
       - ../plugins/RegistrationPayments:/var/www/src/plugins/RegistrationPayments
       - ../plugins/Metabase:/var/www/src/plugins/Metabase
       - ../plugins/Accessibility:/var/www/src/plugins/Accessibility
+      - ../plugins/ValuersManagement:/var/www/src/plugins/ValuersManagement
       - ../em-breve:/var/www/html/em-breve
       
       - ../docker/common/conf-base-museus.php:/var/www/src/themes/MapasMuseus/conf-base.php

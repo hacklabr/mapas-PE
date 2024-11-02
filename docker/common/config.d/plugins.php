@@ -4,6 +4,7 @@ use MApasCulturais\Entities;
 return [
     'plugins' => [
         'SpamDetector',
+        'ValuersManagement',
         'CreateGeoDivisions',
         'Analytics',
         'Accessibility',
