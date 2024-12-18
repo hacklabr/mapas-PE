@@ -1111,6 +1111,254 @@ return [
                         "account" => 18414, // ID campo que define a conta bancária do proponente
                         "account_dv" => 18397, // ID campo que define o DV da conta bancária do proponente
                     ],
+                    "2289" => [
+                        "canab_bb_default_value" => '1 Banco Do Brasil S.A (BB)', // Define qual valor padão representa o Banco do Brasil
+                        "settings" => [ // Configurações padrões
+                            "social_type" => [ // Tipo de proponente (Pessoa Fisica ou Pessoa Jurídica) Pessoa Fisica = 1 Pessoa Jurídica = 2
+                                'Pessoa Física' => '1',
+                                'Pessoa Jurídica' => '2'
+                            ],
+                            "release_type" => [
+                                1 => "01", // Corrente BB
+                                2 => "05", // Poupança BB
+                                3 => "03", // Outros bancos
+                            ],
+                        ],
+                        "social_type" => 34443, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "social_type",
+                            1 => 32329,
+                            2 => 32331,
+                        ],
+                        "proponent_document" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "social_type",
+                            1 => 34439,
+                            2 => 34441,
+                        ],
+                        "account_type" => 34444, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 34436, // ID campo que define a o banco do proponente
+                        "branch" => 34445, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 34446, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 34435, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 34436, // ID campo que define o DV da conta bancária do proponente
+                    ],
+                    "2088" => [
+                        "canab_bb_default_value" => '1 Banco Do Brasil S.A (BB)', // Define qual valor padão representa o Banco do Brasil
+                        "settings" => [ // Configurações padrões
+                            "social_type" => [ // Tipo de proponente (Pessoa Fisica ou Pessoa Jurídica) Pessoa Fisica = 1 Pessoa Jurídica = 2
+                                'Pessoa Física' => '1',
+                                'Pessoa Jurídica' => '2'
+                            ],
+                            "release_type" => [
+                                1 => "01", // Corrente BB
+                                2 => "05", // Poupança BB
+                                3 => "03", // Outros bancos
+                            ],
+                        ],
+                        "social_type" => 34503, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "social_type",
+                            1 => 32016,
+                            2 => 32018,
+                        ],
+                        "proponent_document" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "social_type",
+                            1 => 34499,
+                            2 => 34501,
+                        ],
+                        "account_type" => 34504, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 34498, // ID campo que define a o banco do proponente
+                        "branch" => 34505, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 34506, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 34495, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 34496, // ID campo que define o DV da conta bancária do proponente
+                    ],
+                    "2090" => [
+                        "canab_bb_default_value" => '1 Banco Do Brasil S.A (BB)', // Define qual valor padão representa o Banco do Brasil
+                        "settings" => [ // Configurações padrões
+                            "social_type" => [ // Tipo de proponente (Pessoa Fisica ou Pessoa Jurídica) Pessoa Fisica = 1 Pessoa Jurídica = 2
+                                'Pessoa Física' => '1',
+                                'Pessoa Jurídica' => '2'
+                            ],
+                            "release_type" => [
+                                1 => "01", // Corrente BB
+                                2 => "05", // Poupança BB
+                                3 => "03", // Outros bancos
+                            ],
+                        ],
+                        "social_type" => 34473, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "social_type",
+                            1 => 32249,
+                            2 => 32251,
+                        ],
+                        "proponent_document" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "social_type",
+                            1 => 34469,
+                            2 => 34471,
+                        ],
+                        "account_type" => 34474, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 34468, // ID campo que define a o banco do proponente
+                        "branch" => 34475, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 34476, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 34465, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 34466, // ID campo que define o DV da conta bancária do proponente
+                    ],
+                    "2098" => [
+                        "canab_bb_default_value" => '1 Banco Do Brasil S.A (BB)', // Define qual valor padão representa o Banco do Brasil
+                        "settings" => [ // Configurações padrões
+                            "social_type" => [ // Tipo de proponente (Pessoa Fisica ou Pessoa Jurídica) Pessoa Fisica = 1 Pessoa Jurídica = 2
+                                'Pessoa Física' => '1',
+                                'Pessoa Jurídica' => '2'
+                            ],
+                            "release_type" => [
+                                1 => "01", // Corrente BB
+                                2 => "05", // Poupança BB
+                                3 => "03", // Outros bancos
+                            ],
+                        ],
+                        "social_type" => 34518, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "social_type",
+                            1 => 31692,
+                            2 => 31692,
+                        ],
+                        "proponent_document" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "social_type",
+                            1 => 34514,
+                            2 => 34516,
+                        ],
+                        "account_type" => 34519, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 34513, // ID campo que define a o banco do proponente
+                        "branch" => 34520, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 34521, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 34510, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 34511, // ID campo que define o DV da conta bancária do proponente
+                    ],
+                    "2291" => [
+                        "canab_bb_default_value" => '1 Banco Do Brasil S.A (BB)', // Define qual valor padão representa o Banco do Brasil
+                        "settings" => [ // Configurações padrões
+                            "social_type" => [ // Tipo de proponente (Pessoa Fisica ou Pessoa Jurídica) Pessoa Fisica = 1 Pessoa Jurídica = 2
+                                'Pessoa Física' => '1',
+                                'Pessoa Jurídica' => '2'
+                            ],
+                            "release_type" => [
+                                1 => "01", // Corrente BB
+                                2 => "05", // Poupança BB
+                                3 => "03", // Outros bancos
+                            ],
+                        ],
+                        "social_type" => 34546, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "social_type",
+                            1 => 32547,
+                            2 => 32549,
+                        ],
+                        "proponent_document" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "social_type",
+                            1 => 34544,
+                            2 => 34546,
+                        ],
+                        "account_type" => 34549, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 34543, // ID campo que define a o banco do proponente
+                        "branch" => 34550, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 34551, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 34540, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 34541, // ID campo que define o DV da conta bancária do proponente
+                    ],
+                    "2081" => [
+                        "canab_bb_default_value" => '1 Banco Do Brasil S.A (BB)', // Define qual valor padão representa o Banco do Brasil
+                        "settings" => [ // Configurações padrões
+                            "social_type" => [ // Tipo de proponente (Pessoa Fisica ou Pessoa Jurídica) Pessoa Fisica = 1 Pessoa Jurídica = 2
+                                'Pessoa Física' => '1',
+                                'Pessoa Jurídica' => '2'
+                            ],
+                            "release_type" => [
+                                1 => "01", // Corrente BB
+                                2 => "05", // Poupança BB
+                                3 => "03", // Outros bancos
+                            ],
+                        ],
+                        "social_type" => 34458, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "social_type",
+                            1 => 31636,
+                            2 => 31638,
+                        ],
+                        "proponent_document" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "social_type",
+                            1 => 34454,
+                            2 => 34456,
+                        ],
+                        "account_type" => 34459, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 34453, // ID campo que define a o banco do proponente
+                        "branch" => 34460, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 34461, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 34450, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 34451, // ID campo que define o DV da conta bancária do proponente
+                    ],
+                    "2309" => [
+                        "canab_bb_default_value" => '1 Banco Do Brasil S.A (BB)', // Define qual valor padão representa o Banco do Brasil
+                        "settings" => [ // Configurações padrões
+                            "social_type" => [ // Tipo de proponente (Pessoa Fisica ou Pessoa Jurídica) Pessoa Fisica = 1 Pessoa Jurídica = 2
+                                'Pessoa Física' => '1',
+                                'Pessoa Jurídica' => '2'
+                            ],
+                            "release_type" => [
+                                1 => "01", // Corrente BB
+                                2 => "05", // Poupança BB
+                                3 => "03", // Outros bancos
+                            ],
+                        ],
+                        "social_type" => 34488, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "social_type",
+                            1 => 32009,
+                            2 => 31947,
+                        ],
+                        "proponent_document" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "social_type",
+                            1 => 34484,
+                            2 => 34486,
+                        ],
+                        "account_type" => 34489, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 34483, // ID campo que define a o banco do proponente
+                        "branch" => 34490, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 34491, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 34480, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 34481, // ID campo que define o DV da conta bancária do proponente
+                    ],
+                    "2061" => [
+                        "canab_bb_default_value" => '1 Banco Do Brasil S.A (BB)', // Define qual valor padão representa o Banco do Brasil
+                        "settings" => [ // Configurações padrões
+                            "social_type" => [ // Tipo de proponente (Pessoa Fisica ou Pessoa Jurídica) Pessoa Fisica = 1 Pessoa Jurídica = 2
+                                'Pessoa Física' => '1',
+                                'Pessoa Jurídica' => '2'
+                            ],
+                            "release_type" => [
+                                1 => "01", // Corrente BB
+                                2 => "05", // Poupança BB
+                                3 => "03", // Outros bancos
+                            ],
+                        ],
+                        "social_type" => 34533, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "social_type",
+                            1 => 31492,
+                            2 => 31492,
+                        ],
+                        "proponent_document" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
+                            "dependence" => "social_type",
+                            1 => 34529,
+                            2 => 34529,
+                        ],
+                        "account_type" => 34534, // ID campo que define o tipo de conta bancária do proponente
+                        "bank" => 34528, // ID campo que define a o banco do proponente
+                        "branch" => 34535, // ID campo que define a agência bancária do proponente
+                        "branch_dv" => 34536, // ID campo que define o DV da agência bancária do proponente
+                        "account" => 34525, // ID campo que define a conta bancária do proponente
+                        "account_dv" => 34526, // ID campo que define o DV da conta bancária do proponente
+                    ]
                 ],
             ],
         ],
