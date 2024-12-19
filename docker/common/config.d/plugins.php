@@ -1136,7 +1136,7 @@ return [
                             2 => 34441,
                         ],
                         "account_type" => 34444, // ID campo que define o tipo de conta bancária do proponente
-                        "bank" => 34436, // ID campo que define a o banco do proponente
+                        "bank" => 34438, // ID campo que define a o banco do proponente
                         "branch" => 34445, // ID campo que define a agência bancária do proponente
                         "branch_dv" => 34446, // ID campo que define o DV da agência bancária do proponente
                         "account" => 34435, // ID campo que define a conta bancária do proponente
@@ -1248,7 +1248,7 @@ return [
                                 3 => "03", // Outros bancos
                             ],
                         ],
-                        "social_type" => 34546, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
+                        "social_type" => 34548, // ID campo que define o tipo de ptoponente, (Pessoa Fisica ou Pessoa Jurídica)
                         "proponent_name" => [ // Chave 1 Pessoa física Chave 2 Pessoa Jurídica
                             "dependence" => "social_type",
                             1 => 32547,
