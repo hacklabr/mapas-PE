@@ -23,4 +23,7 @@ return [
 
     'homeHeader.secondBanner' => 'img/panb.jpg',
     'homeHeader.secondBannerLink' => 'https://www.mapacultural.pe.gov.br/projeto/2844/#info',
+
+    'homeHeader.thirdBanner' => 'img/patrimonio-vivo.jpg',
+    'homeHeader.thirdBannerLink' => 'https://www.mapacultural.pe.gov.br/projeto/3115/#info',
 ];
