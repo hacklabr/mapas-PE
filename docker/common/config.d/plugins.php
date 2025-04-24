@@ -1571,7 +1571,7 @@ return [
                         ],
                         "account_type" => 34878, // ID campo que define o tipo de conta bancária do proponente
                         "bank" => 34876, // ID campo que define a o banco do proponente
-                        "branch" => 34789, // ID campo que define a agência bancária do proponente
+                        "branch" => 34879, // ID campo que define a agência bancária do proponente
                         "branch_dv" => 34880, // ID campo que define o DV da agência bancária do proponente
                         "account" => 34881, // ID campo que define a conta bancária do proponente
                         "account_dv" => 34882, // ID campo que define o DV da conta bancária do proponente
