@@ -1,3 +1,5 @@
 docker-data
 node_modules
 vendor
+.env
+docker/production/.htpasswd

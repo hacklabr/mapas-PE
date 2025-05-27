@@ -1,57 +1,42 @@
 [submodule "plugins/MapasBlame"]
 	path = plugins/MapasBlame
 	url = https://github.com/mapasculturais/plugin-MapasBlame.git
-[submodule "plugins/AbstractValidator"]
-	path = plugins/AbstractValidator
-	url = https://github.com/mapasculturais/plugin-AbstractValidator.git
-[submodule "plugins/Accessibility"]
-	path = plugins/Accessibility
-	url = https://github.com/tiagodfdev/accessibility-mapas.git
-[submodule "plugins/AldirBlanc"]
-	path = plugins/AldirBlanc
-	url = https://github.com/mapasculturais/plugin-AldirBlanc.git
-[submodule "plugins/AldirBlancDataprev"]
-	path = plugins/AldirBlancDataprev
-	url = https://github.com/mapasculturais/plugin-AldirBlancDataprev.git
 [submodule "plugins/MultipleLocalAuth"]
 	path = plugins/MultipleLocalAuth
 	url = https://github.com/mapasculturais/plugin-MultipleLocalAuth.git
-[submodule "plugins/RegistrationPayments"]
-	path = plugins/RegistrationPayments
-	url = https://github.com/mapasculturais/plugin-RegistrationPayments.git
-[submodule "plugins/AldirBlancValidador"]
-	path = plugins/AldirBlancValidador
-	url = https://github.com/mapasculturais/plugin-AldirBlancValidador.git
 [submodule "plugins/FormCommunication"]
 	path = plugins/FormCommunication
 	url = https://github.com/Secult-PE/plugin-FormCommunication.git
-[submodule "plugins/AldirBlancValidadorFinanceiro"]
-	path = plugins/AldirBlancValidadorFinanceiro
-	url = https://github.com/mapasculturais/plugin-AldirBlancValidadorFinanceiro.git
-[submodule "plugins/GenericValidator"]
-	path = plugins/GenericValidator
-	url = https://github.com/mapasculturais/plugin-GenericValidator.git
-[submodule "plugins/FinancialValidador"]
-	path = plugins/FinancialValidador
-	url = https://github.com/mapasculturais/Plugin-FinancialValidador.git
-[submodule "themes/Museus"]
-	path = themes/Museus
-	url = https://github.com/mapasculturais/theme-Museus.git
-[submodule "plugins/SubsiteImporter"]
-	path = plugins/SubsiteImporter
-	url = https://github.com/mapasculturais/plugin-SubsiteImporter.git
-[submodule "plugins/CadUnico"]
-	path = plugins/CadUnico
-	url = https://github.com/mapasculturais/plugin-CadUnico.git
+[submodule "plugins/SettingsPe"]
+	path = plugins/SettingsPe
+	url = https://github.com/erleibiazzio/SettingsPe.git
 [submodule "plugins/ClaimForm"]
 	path = plugins/ClaimForm
 	url = https://github.com/mapasculturais/plugin-ClaimForm.git
-[submodule "plugins/SubsiteMuseusSwitcher"]
-	path = plugins/SubsiteMuseusSwitcher
-	url = https://github.com/erleibiazzio/SubsiteMuseusSwitcher.git
-[submodule "plugins/ValuersManagement"]
-	path = plugins/ValuersManagement
-	url = https://github.com/mapasculturais/plugin-ValuersManagement
+[submodule "plugins/Metabase"]
+	path = plugins/Metabase
+	url = https://github.com/mapasculturais/plugin-Metabase
+[submodule "themes/MapasMuseus"]
+	path = themes/MapasMuseus
+	url = https://github.com/mapasculturais/theme-Museus
+[submodule "plugins/AdminLoginAsUser"]
+	path = plugins/AdminLoginAsUser
+	url = https://github.com/mapasculturais/plugin-AdminLoginAsUser.git
+[submodule "plugins/RegistrationPayments"]
+	path = plugins/RegistrationPayments
+	url = https://github.com/mapasculturais/plugin-RegistrationPayments.git
+[submodule "plugins/CreateGeoDivisions"]
+	path = plugins/CreateGeoDivisions
+	url = https://github.com/mapasculturais/plugin-CreateGeoDivisions.git
 [submodule "plugins/Analytics"]
 	path = plugins/Analytics
 	url = https://github.com/mapasculturais/plugin-Analytics.git
+[submodule "plugins/Accessibility"]
+	path = plugins/Accessibility
+	url = https://github.com/mapasculturais/plugin-Accessibility.git
+[submodule "plugins/SpamDetector"]
+	path = plugins/SpamDetector
+	url = https://github.com/mapasculturais/plugin-SpamDetector.git
+[submodule "plugins/ValuersManagement"]
+	path = plugins/ValuersManagement
+	url = https://github.com/mapasculturais/plugin-ValuersManagement.git

@@ -8,6 +8,8 @@ on:
     - "master"
     - "develop"
     - "basev2"
+    - "v7.0"
+    - "v7.4"
 
 jobs:
   docker:
@@ -17,9 +19,12 @@ jobs:
         name: Checkout
         uses: actions/checkout@v3
       -
+        name: Invalidate Docker cache
+          echo "##[set-output name=CACHE_KEY]${{ steps.set-cache-key.outputs.CACHE_KEY }}"
+        id: set-cache-key
+      -
         name: Docker meta
         id: meta
-        uses: docker/metadata-action@v4
         with:
           images: |
             docker.io/hacklab/mapas-pe 
@@ -49,8 +54,14 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v4
         with:
-          file: ./compose/production/Dockerfile
+          file: ./docker/Dockerfile
           context: .
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+        env:
+          CACHE_KEY: ${{ steps.set-cache-key.outputs.CACHE_KEY }}
+
+      - name: Cleanup
+        run: |
+          rm env.list

@@ -6,7 +6,7 @@ git pull
 
 git submodule update
 
-docker-compose -f docker-compose.$ENV.yml build --no-cache --pull mapasculturais
+docker compose -f docker-compose.$ENV.yml build --no-cache --pull
 
 ./stop.sh $ENV
 ./start.sh $ENV
