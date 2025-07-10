@@ -20,14 +20,11 @@ jobs:
         uses: actions/checkout@v3
       -
         name: Invalidate Docker cache
-        run: |
-          echo "CACHE_KEY=$(date)" >> env.list
           echo "##[set-output name=CACHE_KEY]${{ steps.set-cache-key.outputs.CACHE_KEY }}"
         id: set-cache-key
       -
         name: Docker meta
         id: meta
-        uses: docker/metadata-action@v4
         with:
           images: |
             docker.io/hacklab/mapas-pe 
