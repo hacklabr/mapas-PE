@@ -43,3 +43,6 @@
 [submodule "plugins/AccountConsolidator"]
 	path = plugins/AccountConsolidator
 	url = https://github.com/mapasculturais/plugin-AccountConsolidator
+[submodule "plugins/AccountStatus"]
+	path = plugins/AccountStatus
+	url = https://github.com/mapasculturais/plugin-AccountStatus
