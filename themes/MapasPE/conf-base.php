@@ -24,6 +24,6 @@ return [
     'homeHeader.secondBanner' => 'img/panb.jpg',
     'homeHeader.secondBannerLink' => 'https://www.mapacultural.pe.gov.br/projeto/2844/#info',
 
-    'homeHeader.thirdBanner' => 'img/escutaPnab.png',
+    'homeHeader.thirdBanner' => 'img/escuta-pnab.png',
     'homeHeader.thirdBannerLink' => 'https://www.mapacultural.pe.gov.br/oportunidade/2753/#info',
 ];
