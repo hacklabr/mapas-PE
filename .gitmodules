@@ -46,3 +46,6 @@
 [submodule "plugins/AccountStatus"]
 	path = plugins/AccountStatus
 	url = https://github.com/mapasculturais/plugin-AccountStatus
+[submodule "plugins/CommitteeDraw"]
+	path = plugins/CommitteeDraw
+	url = https://github.com/mapasculturais/plugin-CommitteeDraw
