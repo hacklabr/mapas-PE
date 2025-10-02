@@ -52,13 +52,6 @@ services:
       - db
       - redis
       - sessions
-      
-  sessions:
-    image: redis:6
-    restart: unless-stopped
-    command: --maxmemory 1024Mb --maxmemory-policy allkeys-lru
-    volumes:
-      - ./docker-data/sessions:/data
 
   redis:
     image: redis:6
@@ -73,7 +66,7 @@ services:
       - ./docker-data/sessions:/data
 
   db:
-    image: postgis/postgis:14-master
+    image: postgis/postgis:15-master
     restart: unless-stopped
     environment:
       - POSTGRES_PASSWORD=mapas
