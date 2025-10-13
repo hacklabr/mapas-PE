@@ -54,4 +54,42 @@ return [
         }
         $app->enableAccessControl();
     },
+
+    'Altera o campo mus_acervo_propriedade para array de string' => function () {
+        $app = App::i();
+        $em = $app->em;
+        /** @var M\Connection $conn */
+        $conn = $em->getConnection();
+
+        $query = "
+            SELECT sm.id, sm.value
+            FROM space s
+            JOIN space_meta sm ON sm.object_id = s.id
+            WHERE s.subsite_id = 2
+                AND sm.key = 'mus_acervo_propriedade'
+        ";
+
+        $results = $conn->fetchAllAssociative($query);
+
+        $value_map = [
+            'Possui acervo próprio e em comodato' => 'Possui acervo próprio e de doações'
+        ];
+
+        foreach ($results as $row) {
+            $id = $row['id'];
+            $value = trim($row['value']);
+
+            if (str_starts_with($value, '[') && str_ends_with($value, ']')) {
+                continue;
+            }
+
+            if (array_key_exists($value, $value_map)) {
+                $value = $value_map[$value];
+            }
+
+            $new_value = json_encode([$value]);
+
+            $conn->update('space_meta', ['value' => $new_value], ['id' => $id]);
+        }
+    },
 ];
