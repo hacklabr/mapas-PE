@@ -44,7 +44,14 @@ class Plugin extends \MapasCulturais\Plugin
         $app->hook('template(site.index.home-search-form):before', function () use($config){
             $this->part('home-search--images', ['config' => $config]);
         });
-        
+
+        $app->hook("app.register:after", function() {
+            if($this->subsite && isset($this->config['museus.subsiteId']) && $this->subsite->id == $this->config['museus.subsiteId']){
+                $metadata = $this->getRegisteredMetadata('MapasCulturais\Entities\Space');
+                $metadata['capacidade']->config['label'] = i::__('O museu possui capacidade para ( XX ) pessoas');
+                $metadata['horario']->config['label'] = i::__('Insira cada dia da semana em uma linha');
+            }
+        });    
     }
 
     public function register()
