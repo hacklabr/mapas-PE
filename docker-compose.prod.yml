@@ -27,6 +27,8 @@ services:
       dockerfile: docker/Dockerfile
     restart: unless-stopped
     volumes:
+      - ./docker/production/fpm.conf:/usr/local/etc/php-fpm.d/www.conf
+
       - ./.env:/.env
       - ./docker-data/assets:/var/www/html/assets
       - ./docker-data/public-files:/var/www/html/files
@@ -54,12 +56,12 @@ services:
 
   redis:
     image: redis:6
-    command: --maxmemory 1256Mb --maxmemory-policy allkeys-lru
+    command: --maxmemory 3144Mb --maxmemory-policy allkeys-lru
     restart: unless-stopped
  
   sessions:
     image: redis:6
-    command: --maxmemory 384Mb --maxmemory-policy allkeys-lru
+    command: --maxmemory 1024Mb --maxmemory-policy allkeys-lru
     restart: unless-stopped
     volumes:
       - ./docker-data/sessions:/data
