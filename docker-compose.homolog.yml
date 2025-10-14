@@ -11,8 +11,7 @@ services:
       - ./docker/production/nginx-homolog.conf:/etc/nginx/conf.d/default.conf
       - ./em-breve:/var/www/html/em-breve
 
-      # Caso exista senha para acesso http do homolog descomentar essa linha
-      # - ./docker/production/.htpasswd:/etc/nginx/.htpasswd
+      - ./.htpasswd:/etc/nginx/htpasswd
  
     ports:
      - "80:80"
