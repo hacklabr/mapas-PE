@@ -82,7 +82,14 @@ services:
 ## para os usuários no caso de o ambiente de homologação utilizar um banco de dados cópia
 ## de produção
 
-  # mailhog: 
-  #   image: mailhog/mailhog
-  #   ports:
-  #     - "8025:8025"
+  mailhog: 
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"
+    environment:
+      - MH_STORAGE=maildir
+      - MH_HOSTNAME=www.aldirblanchomolog.mapacultural.pe.gov.br
+      - MH_MAILDIR_PATH=/maildir 
+    volumes:
+      - ./docker-data/mailhog:/maildir
+    
