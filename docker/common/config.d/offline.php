@@ -1,7 +1,7 @@
 <?php
 return [
-    'app.offline' => date('Y-m-d H:i:s') > '2024-09-23 09:00:00' && date('Y-m-d H:i:s') < '2024-09-23 17:00:00',
-    'app.offlineUrl' => '/em-breve',
+    'app.offline' => env('OFFLINE_UNTIL', true) && date('Y-m-d H:i:s') < env('OFFLINE_UNTIL', '2025-10-14 12:00:00'),
+    'app.offlineUrl' => '/em-breve/',
     'app.offlineBypassFunction' => function() {
         $senha = $_GET['online'] ?? '';
         

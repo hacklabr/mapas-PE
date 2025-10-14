@@ -66,7 +66,7 @@ services:
       - ./docker-data/sessions:/data
 
   db:
-    image: postgis/postgis:14-master
+    image: postgis/postgis:15-master
     restart: unless-stopped
     environment:
       - POSTGRES_PASSWORD=mapas

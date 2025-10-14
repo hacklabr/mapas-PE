@@ -73,3 +73,10 @@ services:
     image: mailhog/mailhog
     ports:
       - "8025:8025"
+    environment:
+     # - MH_UI_WEB_PATH=mailhog
+      - MH_MAILDIR_PATH=/maildir
+      - MH_STORAGE=maildir
+      - MH_HOSTNAME=dev.mapacultural.pe.gov.br
+    volumes:
+      - ./docker-data/mailhog:/maildir

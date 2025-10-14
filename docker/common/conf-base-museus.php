@@ -25,6 +25,9 @@ return [
     "text:home-register.description" => i::__("Contribua com a plataforma livre e interativa de mapeamento do cenário cultural e instrumento de governança digital no aprimoramento da gestão pública, dos mecanismos de participação e da democratização do acesso às políticas culturais promovidas pela Secretaria de Cultura do Pará."),
     'text:home-developers.description' => 'Além disso a plataforma Museus de Pernambuco é um software livre, criado em parceria entre a hacklab/, secretarias de cultura, organizações não governamentais, empresas e coletivos que investem na plataforma. Você pode contribuir para o seu desenvolvimento através do GitHub.',
     "text:home-map.description" => i::__("Os agentes, os espaços e os eventos cadastrados contam com a geolocalização de seus endereços, encontre-os aqui:"),
+    "text:view(edit).capacidade" => i::__("Capacidade de público"),
+    "text:view(edit).horario-funcionamento" => i::__("Horário e dias de funcionamento"),
+    "text:view(edit).long-description" => i::__("Descrição longa: neste campo descreva detalhadamente sobre o museu, , seu histórico, suas atividades, seu acervo e demais informações pertinentes."),
 
     /* 
     Define a url da imagem da logo do site - Substituirá a logo padrão
@@ -233,4 +236,5 @@ return [
         'Xexéu' => 'Xexéu',
     ],
     'museus.memoryPoint.sealId' => env('MEMORY_POINT_SEALID', '27'),
+    'museus.subsiteId' => env('MUSEUS_SUBSITE_ID', 2)
 ];

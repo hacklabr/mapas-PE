@@ -1,0 +1,37 @@
+.elements-wideget{
+    z-index: 9999;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 0;
+}
+
+.elements-wideget > div{
+   flex-basis: 50%;
+   width: 100%;
+}
+
+.elements-wideget > div h3 {
+    margin-bottom: 0;
+    font-size: .70rem;
+    line-height: 1.3rem;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.edit-card-header-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+

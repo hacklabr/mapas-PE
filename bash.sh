@@ -1,4 +1,5 @@
 #!/bin/bash
+ENV=$(cat environment)
 
 ENV=$(cat environment)
 

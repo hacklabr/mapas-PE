@@ -31,12 +31,21 @@
 [submodule "plugins/Analytics"]
 	path = plugins/Analytics
 	url = https://github.com/mapasculturais/plugin-Analytics.git
-[submodule "plugins/Accessibility"]
-	path = plugins/Accessibility
-	url = https://github.com/mapasculturais/plugin-Accessibility.git
 [submodule "plugins/SpamDetector"]
 	path = plugins/SpamDetector
 	url = https://github.com/mapasculturais/plugin-SpamDetector.git
 [submodule "plugins/ValuersManagement"]
 	path = plugins/ValuersManagement
 	url = https://github.com/mapasculturais/plugin-ValuersManagement.git
+[submodule "plugins/Accessibility"]
+	path = plugins/Accessibility
+	url = https://github.com/mapasculturais/plugin-Accessibility.git
+[submodule "plugins/AccountConsolidator"]
+	path = plugins/AccountConsolidator
+	url = https://github.com/mapasculturais/plugin-AccountConsolidator
+[submodule "plugins/AccountStatus"]
+	path = plugins/AccountStatus
+	url = https://github.com/mapasculturais/plugin-AccountStatus
+[submodule "plugins/CommitteeDraw"]
+	path = plugins/CommitteeDraw
+	url = https://github.com/mapasculturais/plugin-CommitteeDraw
