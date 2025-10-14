@@ -24,6 +24,6 @@ return [
     'homeHeader.secondBanner' => 'img/panb.jpg',
     'homeHeader.secondBannerLink' => 'https://www.mapacultural.pe.gov.br/projeto/2844/#info',
 
-    'homeHeader.thirdBanner' => 'img/patrimonio-vivo2.jpg',
-    'homeHeader.thirdBannerLink' => 'https://www.mapacultural.pe.gov.br/projeto/3115/#info',
+    'homeHeader.thirdBanner' => 'img/banner-PNAB-2024.png',
+    'homeHeader.thirdBannerLink' => 'https://www.mapacultural.pe.gov.br/oportunidade/2753/#info',
 ];
