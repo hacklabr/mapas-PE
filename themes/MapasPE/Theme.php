@@ -1,6 +1,7 @@
 <?php
 namespace MapasPE;
 use MapasCulturais\App;
+use MapasCulturais\i;
 
 class Theme extends \MapasCulturais\Themes\BaseV2\Theme {
     static function getThemeFolder() {
@@ -21,6 +22,12 @@ class Theme extends \MapasCulturais\Themes\BaseV2\Theme {
                     [ 'src' => $app->view->asset('img/favicon-512x512.png', false), 'type' => 'image/png', 'sizes' => '512x512' ]
                 ],
             ]);
+        });
+
+        $app->hook('template(agent.edit.edit<<1|2>>-entity-info-taxonomie-area):after', function () {
+            ?>
+            <entity-terms :entity="entity" hide-required :editable="true" :classes="areaClasses" class="col-12" taxonomy='subarea' title="<?php i::esc_attr_e("Subárea de atuação") ?>"></entity-terms>
+            <?php
         });
     }
 }

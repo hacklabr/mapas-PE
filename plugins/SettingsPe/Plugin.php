@@ -281,7 +281,7 @@ class Plugin extends \MapasCulturais\Plugin
         $taxonomies = [
             'subarea' => [
                 'entity' => 'MapasCulturais\Entities\Agent',
-                'description' => 'Sub área de atuação',
+                'description' => 'Subárea de atuação',
                 'restrictedTerms' => [
                     i::__("Aboio"),
                     i::__("Acorda Povo"),
@@ -417,7 +417,7 @@ class Plugin extends \MapasCulturais\Plugin
                     i::__("Webdesign"),
                     i::__("Xaxado"),
                 ],
-                'required' => \MapasCulturais\i::__('Sub-area de atuação é um campo obrigatório.'),
+                'required' => \MapasCulturais\i::__('Subárea de atuação é um campo obrigatório.'),
             ],
         ];
 
