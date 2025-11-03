@@ -27,7 +27,8 @@ return [
     "text:home-map.description" => i::__("Os agentes, os espaços e os eventos cadastrados contam com a geolocalização de seus endereços, encontre-os aqui:"),
     "text:view(edit).capacidade" => i::__("Capacidade de público"),
     "text:view(edit).horario-funcionamento" => i::__("Horário e dias de funcionamento"),
-    "text:view(edit).long-description" => i::__("Descrição longa: neste campo descreva detalhadamente sobre o museu, , seu histórico, suas atividades, seu acervo e demais informações pertinentes."),
+    "text:view(edit).long-description" => ' ',// Colocado um espaço em branco para remover o conteudo da tela
+    // i::__("Descrição longa: neste campo descreva detalhadamente sobre o museu, seu histórico, suas atividades, seu acervo e demais informações pertinentes.")
 
     /* 
     Define a url da imagem da logo do site - Substituirá a logo padrão
