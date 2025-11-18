@@ -15,7 +15,6 @@ return [
         ],
         // 'AccountStatus',
         'AdminLoginAsUser',
-        /*
         'RegistrationPayments' => [
             'namespace' => 'RegistrationPayments',
             'config' => [
@@ -1618,7 +1617,7 @@ return [
                 ],
             ],
         ],
-        */
+        
         'FormCommunication' => [
             'namespace' => "FormCommunication",
             'config' => ['sendEmailTo' => 'contato.mapacultural@secult.pe.gov.br']
