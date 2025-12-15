@@ -13,7 +13,19 @@ return [
             'skip_user_emails' => ['mapacultural@secult.pe.gov.br'],
             'supportContact' => 'através do 81-31843018 (Whatsapp) e selecione a opção dúvidas técnicas MAPA CULTURAL'
         ],
-        // 'AccountStatus',
+        "AccountStatus" => [
+            "namespace" => "AccountStatus",
+            "config" => [
+                'inactive_seal_id' => 29,
+                'inactive_period' => env('USR_STATUS_INACTIVE_PERIOD', '-1 year'),
+                'updated_seal_id' => 30,
+                'update_expiration_period' => env('USR_STATUS_LAST_UPDATE', '+1 year'),
+                'update_fields' => [
+                    'name',
+                    'shortDescription',
+                ],
+            ]
+        ],
         'AdminLoginAsUser',
         'RegistrationPayments' => [
             'namespace' => 'RegistrationPayments',
