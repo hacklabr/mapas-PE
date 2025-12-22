@@ -21,7 +21,7 @@ return [
     'homeHeader.banner' => 'img/censo-banner.jpg',
     'homeHeader.bannerLink' => 'https://www.mapacultural.pe.gov.br/projeto/2883/#info',
 
-    'homeHeader.secondBanner' => 'img/panb.jpg',
+    'homeHeader.secondBanner' => 'img/banner-PNAB.png',
     'homeHeader.secondBannerLink' => 'https://www.mapacultural.pe.gov.br/projeto/2844/#info',
 
     'homeHeader.thirdBanner' => 'img/banner-PNAB-2024.png',
