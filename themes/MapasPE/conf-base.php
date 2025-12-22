@@ -22,7 +22,7 @@ return [
     'homeHeader.bannerLink' => 'https://www.mapacultural.pe.gov.br/projeto/2883/#info',
 
     'homeHeader.secondBanner' => 'img/banner-PNAB.png',
-    'homeHeader.secondBannerLink' => 'https://www.mapacultural.pe.gov.br/projeto/2844/#info',
+    'homeHeader.secondBannerLink' => 'https://www.mapacultural.pe.gov.br/projeto/3335/#info',
 
     'homeHeader.thirdBanner' => 'img/banner-PNAB-2024.png',
     'homeHeader.thirdBannerLink' => 'https://www.mapacultural.pe.gov.br/oportunidade/2753/#info',
