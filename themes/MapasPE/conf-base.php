@@ -18,8 +18,8 @@ return [
     /* Esconde o título e subtitulo */
     'logo.hideLabel' => true,
     
-    'homeHeader.banner' => 'img/censo-banner.jpg',
-    'homeHeader.bannerLink' => 'https://www.mapacultural.pe.gov.br/projeto/2883/#info',
+    // 'homeHeader.banner' => 'img/censo-banner.jpg',
+    // 'homeHeader.bannerLink' => 'https://www.mapacultural.pe.gov.br/projeto/2883/#info',
 
     'homeHeader.secondBanner' => 'img/banner-PNAB.png',
     'homeHeader.secondBannerLink' => 'https://www.mapacultural.pe.gov.br/projeto/3335/#info',
