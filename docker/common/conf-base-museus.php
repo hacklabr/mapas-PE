@@ -2,6 +2,12 @@
 use \MapasCulturais\i;
 
 return [
+    'homeHeader.secondBanner' => 'img/Plat. Museus_Banner_01.png',
+    // 'homeHeader.secondBannerLink' => '',
+
+    'homeHeader.thirdBanner' => 'img/Plat. Museus_Banner-02.png',
+    // 'homeHeader.thirdBannerLink' => '',
+    
     /* Primeira linha do logo configurável */
     'logo.title' => 'Museus',
 
