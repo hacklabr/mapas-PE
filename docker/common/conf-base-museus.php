@@ -2,11 +2,14 @@
 use \MapasCulturais\i;
 
 return [
-    'homeHeader.secondBanner' => 'img/Plat. Museus_Banner_01.png',
+    'homeHeader.banner' => 'img/Plat. Museus_Banner_01.png',
+    // 'homeHeader.bannerLink' => '',
+
+    'homeHeader.secondBanner' => 'img/Plat. Museus_Banner-02.png',
     // 'homeHeader.secondBannerLink' => '',
 
-    'homeHeader.thirdBanner' => 'img/Plat. Museus_Banner-02.png',
-    // 'homeHeader.thirdBannerLink' => '',
+    'homeHeader.thirdBanner' => 'img/Plat. Museus_Banner-03.png',
+    'homeHeader.thirdBannerLink' => 'https://www.mapacultural.pe.gov.br',
     
     /* Primeira linha do logo configurável */
     'logo.title' => 'Museus',
