@@ -4,6 +4,8 @@ services:
     image: nginx:latest
     restart: unless-stopped
     volumes:
+      - ./docker/entrypoint.sh:/entrypoint.sh
+      
       - /dev/null:/var/www/html/index.php
 
       - ./docker-data/public-files:/var/www/html/files
