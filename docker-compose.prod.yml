@@ -4,7 +4,6 @@ services:
     image: nginx:latest
     restart: unless-stopped
     volumes:
-      - ./docker/entrypoint.sh:/entrypoint.sh
       
       - /dev/null:/var/www/html/index.php
 
@@ -29,6 +28,7 @@ services:
       dockerfile: docker/Dockerfile
     restart: unless-stopped
     volumes:
+      - ./docker/entrypoint.sh:/entrypoint.sh
       - ./docker/production/fpm.conf:/usr/local/etc/php-fpm.d/www.conf
 
       - ./.env:/.env
