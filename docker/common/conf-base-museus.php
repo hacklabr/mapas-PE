@@ -2,6 +2,15 @@
 use \MapasCulturais\i;
 
 return [
+    'homeHeader.banner' => 'img/Plat. Museus_Banner_01.png',
+    // 'homeHeader.bannerLink' => '',
+
+    'homeHeader.secondBanner' => 'img/Plat. Museus_Banner-02.png',
+    // 'homeHeader.secondBannerLink' => '',
+
+    'homeHeader.thirdBanner' => 'img/Plat. Museus_Banner-03.png',
+    'homeHeader.thirdBannerLink' => 'https://www.mapacultural.pe.gov.br',
+    
     /* Primeira linha do logo configurável */
     'logo.title' => 'Museus',
 
@@ -11,7 +20,15 @@ return [
     'logo.image' => env('LOGO_IMAGE', 'img/logotipoMapasMuseus.png'),
 
     'logo.hideLabel' => env('LOGO_HIDELABEL', true),
- 
+    'module.home' => [
+        'home-header' => env('MODULE_HOME_IMAGE_HEADER','img/home-header.png'),
+        'home-agents' => env('MODULE_HOME_IMAGE_AGENT','img/home/home-entities/agents.jpg'),
+        'home-events' => env('MODULE_HOME_IMAGE_EVENTS','img/home/home-entities/events.jpg'),
+        'home-opportunities' => env('MODULE_HOME_IMAGE_OPPORTUNITIES','img/home/home-entities/opportunities.jpg'),
+        'home-projects' => env('MODULE_HOME_IMAGE_PROJECTS','img/home/home-entities/projects.jpg'),
+        'home-spaces' => env('MODULE_HOME_IMAGE_SPACES','img/home/home-entities/spaces.jpg'),
+        'home-register' => env('MODULE_HOME_IMAGE_REGISTER','img/home/home-register/background.jpg'),
+    ],
     "text:home-header.title" => i::__("Boas-vindas a plataforma Museus de Pernambuco"),
     "text:home-header.description" => i::__("A plataforma Museus de Pernambuco é uma iniciativa da Secretaria de Cultura do Estado de Pernambuco, por meio da Gerência de Territorialidade e Equipamentos Culturais e o Núcleo de Museus. A plataforma tem como objetivo cadastrar, mapear e identificar em parceria com a sociedade, os museus em atividade em nosso Estado.
 

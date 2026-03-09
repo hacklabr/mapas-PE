@@ -49,3 +49,6 @@
 [submodule "plugins/CommitteeDraw"]
 	path = plugins/CommitteeDraw
 	url = https://github.com/mapasculturais/plugin-CommitteeDraw
+[submodule "plugins/HomeHeaderBanners"]
+	path = plugins/HomeHeaderBanners
+	url = https://github.com/mapasculturais/plugin-HomeHeaderBanners.git
