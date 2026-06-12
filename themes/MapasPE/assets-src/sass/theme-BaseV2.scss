@@ -33,7 +33,7 @@ $warning-500: #FF9F1C;
 $helper-500: #0074C1;
 
 // home
-$home-opportunities: #E11318;
+$home-opportunities: #114282;
 $home-feature: #FFAA00;
 $home-register: #9C4EC7;
 
@@ -70,4 +70,8 @@ $home-register: #9C4EC7;
 }
 .home-header__banner{
     max-width: size(400);
+}
+
+.home-opportunities__header {
+    color: white;
 }
