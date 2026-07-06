@@ -32,6 +32,7 @@ services:
       - ../plugins/ValuersManagement:/var/www/src/plugins/ValuersManagement
       - ../plugins/HomeHeaderBanners:/var/www/src/plugins/HomeHeaderBanners
       - ../plugins/SpamDetector:/var/www/src/plugins/SpamDetector
+      - ../plugins/CadastroUnico:/var/www/src/plugins/CadastroUnico
       - ../em-breve:/var/www/html/em-breve
       
       - ../docker/common/conf-base-museus.php:/var/www/src/themes/MapasMuseus/conf-base.php
