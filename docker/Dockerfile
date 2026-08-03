@@ -1,4 +1,4 @@
-FROM hacklab/mapasculturais:cadUnico
+FROM hacklab/mapasculturais:develop
 
 COPY themes /var/www/src/themes
 COPY plugins /var/www/src/plugins
