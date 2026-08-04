@@ -70,7 +70,7 @@ echo "🔒 [Mapas] Aplicando permissões finais..."
 # Verifica existência antes do chown para evitar erros
 [ -d /var/www/public/assets ] && chown www-data:www-data /var/www/public/assets 
 [ -d /var/www/public/files ] && chown www-data:www-data /var/www/public/files 
-[ -d /var/www/var/private-files ] && chown -R www-data:www-data /var/www/var/private-files
+[ -d /var/www/var/private-files ] && chown www-data:www-data /var/www/var/private-files
 
 # ==============================================================================
 # 6. CRONS E PROCESSO PRINCIPAL
