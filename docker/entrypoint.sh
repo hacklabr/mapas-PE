@@ -11,14 +11,14 @@ echo "🐘 [Mapas] Aguardando conexão com o Banco de Dados..."
 
 # Usamos um one-liner PHP para testar a conexão real, pois é mais confiável que netcat/ping
 # Loop de até 60 segundos
-for i in {1..30}; do
-    if php -r "try { new PDO('pgsql:host=${DB_HOST:-db};dbname=${DB_NAME:-mapas}', '${DB_USER:-mapas}', '${DB_PASS:-mapas}'); echo 'OK'; } catch (PDOException \$e) { exit(1); }" > /dev/null 2>&1; then
-        echo "✅ [Mapas] Banco de Dados conectado com sucesso!"
-        break
-    fi
-    echo "⏳ [Mapas] Banco indisponível. Tentando novamente em 2s..."
-    sleep 2
-done
+#for i in {1..30}; do
+#    if php -r "try { new PDO('pgsql:host=${DB_HOST:-db};dbname=${DB_NAME:-mapas}', '${DB_USER:-mapas}', '${DB_PASS:-mapas}'); echo 'OK'; } catch (PDOException \$e) { exit(1); }" > /dev/null 2>&1; then
+#        echo "✅ [Mapas] Banco de Dados conectado com sucesso!"
+#        break
+#    fi
+#    echo "⏳ [Mapas] Banco indisponível. Tentando novamente em 2s..."
+#    sleep 2
+#done
 
 # ==============================================================================
 # 2. CONFIGURAÇÃO DE DIRETÓRIOS E PERMISSÕES
@@ -70,7 +70,7 @@ echo "🔒 [Mapas] Aplicando permissões finais..."
 # Verifica existência antes do chown para evitar erros
 [ -d /var/www/public/assets ] && chown www-data:www-data /var/www/public/assets 
 [ -d /var/www/public/files ] && chown www-data:www-data /var/www/public/files 
-[ -d /var/www/var/private-files ] && chown www-data:www-data /var/www/var/private-files
+[ -d /var/www/var/private-files ] && chown -R www-data:www-data /var/www/var/private-files
 
 # ==============================================================================
 # 6. CRONS E PROCESSO PRINCIPAL
