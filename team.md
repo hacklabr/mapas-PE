@@ -30,3 +30,7 @@
 - **Role in the flow:** Product
 - **Seniority:** não informado
 - **Specialty:** produto
+
+## Post-merge QA (modo qa)
+
+Todos os membros mapeados acima fazem QA — a pessoa de QA de cada tarefa é definida na distribuição da onda (P7), nunca fixa num único nome.
