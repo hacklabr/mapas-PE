@@ -12,3 +12,4 @@
 - board-opt-in-progress: 47fc9ee4
 - board-opt-in-review: df73e18b
 - board-opt-done: 98236657
+- setup-verified: 1.5.0
