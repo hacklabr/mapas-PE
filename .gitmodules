@@ -52,3 +52,6 @@
 [submodule "plugins/HomeHeaderBanners"]
 	path = plugins/HomeHeaderBanners
 	url = https://github.com/mapasculturais/plugin-HomeHeaderBanners.git
+[submodule "plugins/ConectaEnte"]
+	path = plugins/ConectaEnte
+	url = https://github.com/mapasculturais/plugin-ConectaEnte.git
